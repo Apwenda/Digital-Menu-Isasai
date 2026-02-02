@@ -1,0 +1,727 @@
+/* 1. VARIABEL SISTEM (PSIKOLOGI WARNA) */
+:root {
+    --isasai-green: #004225;  /* Profesional & Terpercaya */
+    --isasai-yellow: #FFCC00; /* Identitas Brand */
+    --isasai-orange: #FF8C00; /* Urgensi & Nafsu Makan (CTA) */
+    --isasai-white: #ffffff;
+    --isasai-light: #f8f9fa;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 2. LAYOUT DASAR */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--isasai-light);
+    color: #333;
+}
+
+/* 3. HEADER & NAVIGASI */
+.navbar {
+    background-color: var(--isasai-green) !important;
+    border-bottom: 3px solid var(--isasai-yellow);
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    color: var(--isasai-yellow) !important;
+    letter-spacing: 1px;
+}
+.hero-hidden {
+    display: none !important;
+}
+
+.show-app {
+    display: block !important;
+}
+/* Container Utama */
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* GUNAKAN SATU SAJA: ::after untuk Background */
+
+/* Overlay Gelap */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/* Pseudo-element untuk Background */
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Durasi total 12 detik agar lebih tenang/slow */
+    animation: slideBackgroundSlow 12s infinite ease-in-out;
+    image-rendering: -webkit-optimize-contrast;
+    z-index: 0;
+}
+
+/* Keyframes untuk Efek Geser Halus & Slow */
+@keyframes slideBackgroundSlow {
+    /* Gambar 1 */
+    0%, 25% {
+        background-image: url("../assets/images/Backroud-produk (1).JPG");
+        transform: scale(1);
+        opacity: 1;
+    }
+    /* Transisi Halus (25% ke 33%) */
+    33% {
+        opacity: 0.3;
+        transform: scale(1.1) translateX(-10px);
+    }
+
+    /* Gambar 2 */
+    34%, 58% {
+        background-image: url("../assets/images/Backroud-produk (2).jpg");
+        transform: scale(1);
+        opacity: 1;
+    }
+    /* Transisi Halus (58% ke 66%) */
+    66% {
+        opacity: 0.3;
+        transform: scale(1.1) translateX(-10px);
+    }
+
+    /* Gambar 3 */
+    67%, 91% {
+        background-image: url("../assets/images/Backroud-produk (3).jpg");
+        transform: scale(1);
+        opacity: 1;
+    }
+    /* Transisi Halus (91% ke 100%) */
+    100% {
+        opacity: 0.3;
+        transform: scale(1.1) translateX(-10px);
+    }
+}
+
+/* ===============================
+    CATEGORY NAV (BASE)
+================================ */
+.category-scroll-container {
+    position: sticky;
+    top: calc(72px + env(safe-area-inset-top));
+    z-index: 1015;
+    background: #fff;
+    padding: 15px 0; /* Sedikit dirapatkan dari 18px */
+}
+
+/* Wrapper tombol */
+.category-nav {
+    display: flex;
+    gap: 8px; /* Jarak antar tombol dioptimalkan */
+    padding: 0 10px;
+    width: 100%;
+    justify-content: center; /* Memastikan posisi di tengah jika ruang sisa */
+}
+
+/* ===============================
+    DESKTOP: CENTER CATEGORY NAV
+================================ */
+@media (min-width: 992px) {
+    #category-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 14px;
+    }
+
+    .btn-cat {
+        font-size: 15px;
+        padding: 10px 22px;
+    }
+}
+
+/* ===============================
+    MOBILE: FIT TO SCREEN (NO OVERFLOW)
+================================ */
+@media (max-width: 576px) {
+    .category-nav {
+        gap: 4px; /* Merapatkan jarak antar menu agar muat */
+        padding: 0 5px;
+    }
+
+    .btn-cat {
+        font-size: 13px; /* Ukuran teks diperkecil agar tidak meluap */
+        padding: 8px 4px; /* Padding minimal kiri-kanan */
+        flex: 1; /* Membagi ruang secara adil agar semua menu masuk */
+        white-space: nowrap; /* Teks tetap satu baris */
+        text-align: center;
+        min-width: 0; /* Mencegah elemen flex meluap */
+    }
+
+    /* Penyesuaian khusus tombol dropdown agar icon panah tidak memakan tempat */
+    .dropdown-toggle::after {
+        margin-left: 2px !important;
+    }
+}
+
+/* Shadow & Grid */
+body:has(.category-scroll-container) .category-scroll-container {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.menu-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===============================
+   MOBILE BOTTOM NAV (PRO)
+================================ */
+
+/* Default: HILANG di desktop */
+.mobile-bottom-nav {
+    display: none;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 991px) {
+
+    .mobile-bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: env(safe-area-inset-bottom);
+        left: 0;
+        right: 0;
+        height: 68px;
+
+        background: rgba(255,255,255,0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        border-top: 1px solid rgba(0,0,0,0.08);
+        box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+
+        z-index: 9999;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile-bottom-nav .nav-item {
+        flex: 1;
+        text-align: center;
+        color: #666;
+        font-size: 11px;
+        font-weight: 500;
+        text-decoration: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        transition: color 0.2s ease;
+    }
+
+    .mobile-bottom-nav .nav-item i {
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    /* ACTIVE STATE */
+    .mobile-bottom-nav .nav-item.active {
+        color: #ffcc00;
+    }
+
+    .mobile-bottom-nav .nav-item.active i {
+        transform: translateY(-1px);
+    }
+
+    /* Tap feedback */
+    .mobile-bottom-nav .nav-item:active {
+        opacity: 0.7;
+    }
+
+    /* Biar konten gak ketutup nav */
+    body {
+        padding-bottom: calc(70px + env(safe-area-inset-bottom));
+    }
+}
+
+
+/* Efek Glassmorphism (Kartu Transparan) */
+.glass-card {
+    background: rgba(0, 66, 37, 0.4); /* Hijau Gelap dengan transparansi 40% */
+    backdrop-filter: blur(10px); /* Efek blur di belakang kartu */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 204, 0, 0.3); /* Border tipis warna Kuning */
+    border-radius: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Tipografi */
+.cafe-title {
+    color: #FFCC00; /* Kuning Brand */
+    margin-top: 15px;
+}
+
+/* Tombol CTA Oranye (Psikologi Nafsu Makan & Urgensi) */
+.btn-cta-orange {
+    background-color: #FF8C00; /* Oranye */
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+
+.btn-cta-orange:hover {
+    background-color: #e67e00;
+    transform: scale(1.05); /* Sedikit membesar saat hover */
+    color: #FFCC00;
+}
+/* --- PERBAIKAN LOGO HERO (ZOOM-IN ONLY) --- */
+.hero-logo {
+  width: 180px;
+  height: 180px;
+
+  /* Fokus pada bagian tengah bulatan logo */
+  object-fit: cover;
+  /* Melakukan zoom-in agar bulatan logo terlihat lebih besar */
+  transform: scale(1.3);
+
+  /* Ruang kosong antara logo dan tepi lingkaran putih */
+  padding: 10px;
+
+  border-radius: 50%;
+
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+
+  /* Memastikan logo yang ter-zoom tidak keluar dari bingkai putih */
+  overflow: hidden;
+}
+
+.hero-logo:hover {
+    transform: scale(1.38);
+}
+
+/* --- PERBAIKAN NAVBAR & TEKS --- */
+.navbar {
+    background-color: var(--isasai-green) !important;
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+/* Update pada bagian ini */
+#menu-container {
+    margin-top: 20px !important; /* Memberikan jarak 20px dari Nav Kategori */
+}
+/* --- OPTIMASI KARTU MENU (CARD) --- */
+.card-menu {
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Memperbaiki Gambar Menu yang Tidak Muncul/Rusak */
+.carousel-inner img {
+    height: 160px; /* Tinggi seragam agar rapi */
+    width: 100%;
+    object-fit: cover; /* Gambar tidak akan gepeng */
+    background-color: #f0f0f0; /* Warna dasar jika gambar gagal muat */
+}
+
+/* --- TYPOGRAPHY & HARGA --- */
+.card-body h6 {
+    font-size: 0.85rem;
+    min-height: 2.2rem; /* Menjaga judul tetap sejajar meski 2 baris */
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.price-tag {
+    color: var(--isasai-orange);
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 0.8rem !important;
+}
+
+/* --- TOMBOL TAMBAH (OPTIMASI MOBILE) --- */
+.btn-add-to-cart {
+    font-size: 0.75rem;
+    padding: 8px 5px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 0 #ccaa00; /* Efek tombol 3D */
+}
+
+.btn-add-to-cart:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #ccaa00;
+}
+
+/*Animasi tambah ke keranjang*/
+.fly-to-cart {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+    transition:
+  transform 1.3s cubic-bezier(0.16, 1, 0.3, 1),
+  opacity 1.2s ease;
+}
+
+/* --- RESPONSIVITAS MOBILE --- */
+@media (max-width: 576px) {
+    #menu-container {
+        padding: 0 5px;
+    }
+    .col-6 {
+        padding: 5px; /* Memberi jarak antar kartu di mobile */
+    }
+    .carousel-inner img {
+        height: 130px; /* Lebih pendek di mobile agar layar tidak penuh */
+    }
+}
+
+/* 4. KARTU MENU (GRID 4 KOLOM) */
+.card-menu {
+    border: none;
+    border-radius: 16px;
+    background: var(--isasai-white);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card-menu:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* 5. ELEMEN VISUAL KONVERSI (CTA) */
+/* Label Best Seller Oranye */
+.badge-best-seller {
+    background-color: var(--isasai-orange);
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 6px 12px;
+    border-radius: 0 0 0 16px;
+    z-index: 10;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Harga Oranye Tebal */
+.price-tag {
+    color: var(--isasai-orange);
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+/* Tombol Tambah (Kuning ke Oranye Hover) */
+.btn-add-to-cart {
+    background-color: var(--isasai-yellow);
+    border: none;
+    color: var(--isasai-green);
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.btn-add-to-cart:hover {
+    background-color: var(--isasai-orange);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ===============================
+   DETAIL PAKET (FINAL – SIAP PAKE)
+================================ */
+
+.paket-detail-list {
+    background-color: var(--isasai-light, #fff);
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 8px;
+    overflow: visible;
+}
+
+/* Item paket */
+.paket-detail-list li {
+    display: flex;
+    flex-direction: column;      /* badge atas, teks bawah */
+    align-items: flex-start;
+    gap: 6px;
+
+    padding: 8px 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+
+    border-bottom: 1px solid #ebebeb;
+}
+
+.paket-detail-list li:last-child {
+    border-bottom: none;
+}
+
+/* Nama item (teks full lebar) */
+.paket-detail-list li span:first-child {
+    width: 100%;
+    word-break: break-word;
+}
+
+/* Qty badge (di atas) */
+.paket-detail-list .badge {
+    font-size: 0.7rem;
+    white-space: nowrap;
+}
+
+/* ===============================
+   MOBILE TUNING
+================================ */
+@media (max-width: 576px) {
+    .paket-detail-list {
+        padding: 10px;
+    }
+
+    .paket-detail-list li {
+        font-size: 0.8rem;
+    }
+}
+
+.bi-check-circle-fill {
+    color: #28a745; /* Hijau Segar untuk Checklist */
+    margin-right: 8px;
+}
+
+/* 7. FLOATING CART BAR */
+.floating-checkout {
+    background-color: var(--isasai-orange);
+    color: white;
+    border-radius: 50px;
+    padding: 16px 24px;
+    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.4);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.floating-checkout:hover {
+    background-color: #e67e00;
+    transform: translateY(-3px);
+}
+
+
+/* 9. RESPONSIVITAS */
+@media (max-width: 768px) {
+    .card-menu .carousel-inner img {
+        height: 140px; /* Lebih kecil di HP agar tidak makan tempat */
+    }
+    .price-tag { font-size: 1rem; }
+}
+
+/* Animasi angka berubah */
+.qty-anim {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.qty-scale {
+    transform: scale(1.4);
+    color: #198754; /* Warna hijau saat naik */
+}
+
+/* Animasi kartu keranjang saat muncul/dihapus */
+.cart-item-anim {
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.cart-item-removed {
+    animation: slideOut 0.3s ease-in forwards;
+}
+
+@keyframes slideOut {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(-20px); }
+}
+
+/* ===============================
+   CONTACT VIEW STYLING
+================================ */
+#contact-view {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ===== JUDUL ===== */
+#contact-view h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--isasai-green); /* hijau gelap */
+    font-weight: 800;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#contact-view h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--isasai-yellow); /* garis kuning elegan */
+    border-radius: 2px;
+}
+
+/* ===== CONTACT ACTIONS WRAPPER ===== */
+.contact-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* ===== CONTACT CARD ===== */
+.contact-action {
+    background: var(--isasai-white);
+    border-radius: 18px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid rgba(0, 66, 37, 0.1);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-action:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+}
+
+/* ===== ICON ===== */
+.contact-action .icon {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+/* ===== TEXT ===== */
+.contact-action .text strong {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--isasai-green);
+    margin-bottom: 4px;
+}
+
+.contact-action .text small {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ===== DISABLED STATE ===== */
+.contact-action.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* ===== MAP ===== */
+.map-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 4px solid var(--isasai-white);
+    line-height: 0;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 400px;
+    filter: grayscale(10%) contrast(110%);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 576px) {
+    .contact-actions {
+        gap: 16px;
+    }
+
+    .contact-action {
+        padding: 18px;
+    }
+
+    .map-wrapper iframe {
+        height: 300px;
+    }
+}
+
+/* ===============================
+   COPYRIGHT SECTION
+================================ */
+.copyright-section {
+    background-color: var(--isasai-light); /* Warna abu-abu sangat muda */
+    border-top: 1px solid rgba(0,0,0,0.05);
+    margin-top: 10px;
+    padding-bottom: 15px !important; /* Ruang agar tidak tertutup mobile bottom nav */
+}
+
+.copyright-section p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.designer-link {
+    color: var(--isasai-green);
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+    border-bottom: 1px dashed var(--isasai-yellow);
+}
+
+.designer-link:hover {
+    color: var(--isasai-orange);
+    border-bottom: 1px solid var(--isasai-orange);
+}
+
+/* Penyesuaian untuk tampilan mobile */
+@media (max-width: 576px) {
+    .copyright-section {
+        padding-bottom: 120px !important; /* Lebih tinggi sedikit di HP */
+    }
+}

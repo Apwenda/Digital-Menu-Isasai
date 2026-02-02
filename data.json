@@ -1,0 +1,915 @@
+[
+  {
+  "id": 1,
+  "nama": "Paket Sentani Fest (35 Orang)",
+  "harga": 5750000,
+  "deskripsi": "Paket Sentani Fest adalah sajian cita rasa autentik Danau Sentani untuk rombongan besar dengan olahan ikan segar.",
+  "kategori": "Makanan",
+  "sub": "Paket/Combo",
+  "sub_header": "Menu Paket/Combo",
+  "isPaket": true,
+  "gambar": [
+    "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).jpg",
+    "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (2).jpg",
+    "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).png"
+  ],
+  "items": [
+    { "name": "Papeda panas sempe sedang", "qty": "2 porsi" },
+    { "name": "Papeda bungkus", "qty": "10 porsi" },
+    { "name": "Keladi tumbuk", "qty": "5 porsi" },
+    { "name": "Campuran ubi rebus", "qty": "5 porsi" },
+    { "name": "Pisang asli rebus", "qty": "5 porsi" },
+    { "name": "Ikan Gabus saos", "qty": "20 potong" },
+    {
+      "name": "Ikan Gabus (Pilih Olahan)",
+      "qty": "20 potong",
+      "options": ["Gabus Kuah Bening", "Gabus Kuah Kuning"]
+    },
+    { "name": "Mujair asar santan", "qty": "25 potong" },
+    { "name": "Mujair kuah kuning", "qty": "25 potong" },
+    { "name": "Sayur tumis", "qty": "9 porsi" },
+    { "name": "Sayur genemo lilin santan", "qty": "9 porsi" },
+    { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+  ]
+},
+  {
+    "id": 2,
+    "nama": "Paket Makan Ayapo (20 Orang)",
+    "harga": 3550000,
+    "deskripsi": "Paket Makan Ayapo menyajikan papeda, umbi lokal, dan olahan ikan khas Papua untuk kebersamaan rombongan besar.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+      "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (3).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (4).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (5).jpg"
+              ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "2 porsi" },
+      { "name": "Papeda bungkus", "qty": "3 porsi" },
+      { "name": "Keladi tumbuk", "qty": "2 porsi" },
+      { "name": "Campuran ubi rebus", "qty": "2 porsi" },
+      { "name": "Pisang asli rebus", "qty": "2 porsi" },
+      { "name": "Ikan Gabus saos", "qty": "10-15 potong" },
+      {
+      "name": "Ikan Gabus (Pilih Olahan)",
+      "qty": "20 potong",
+      "options": ["Gabus Kuah Bening", "Gabus Kuah Kuning"]
+      },
+      { "name": "Mujair asar santan", "qty": "15 potong" },
+      { "name": "Sayur tumis", "qty": "5 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "5 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 4,
+    "nama": "Paket Makan Isasai (10 Orang) - V2",
+    "harga": 1550000,
+    "deskripsi":"Paket Makan Isasai menyajikan papeda, umbi lokal, dan olahan ikan pilihan untuk kebersamaan sepuluh orang keluarga besar.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+      "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (7).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (6).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (5).jpg"
+              ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
+      { "name": "Papeda bungkus", "qty": "5 porsi" },
+      { "name": "Keladi tumbuk/campuran ubi", "qty": "2 porsi" },
+      { "name": "Pisang asli rebus", "qty": "2 porsi" },
+      {
+      "name": "Ikan Mujair (Pilih Olahan)",
+      "qty": "20 potong",
+      "options": ["Mujair Kuah Bening", "Mujair Kuah Kuning", "Saos"]
+    },
+      { "name": "Ikan Gabus asar kuah santan", "qty": "10-12 potong" },
+      { "name": "Sayur tumis", "qty": "3 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "2 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 3,
+    "nama": "Paket Makan Isasai (10 Orang) - V1",
+    "harga": 1750000,
+    "deskripsi":"Paket Makan Isasai menghadirkan papeda hangat, umbi lokal, serta olahan ikan khas Papua untuk sepuluh orang bersama.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+      "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (7).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (2).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).jpg"
+              ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
+      { "name": "Papeda bungkus", "qty": "5 porsi" },
+      { "name": "Keladi tumbuk/campuran ubi", "qty": "2 porsi" },
+      { "name": "Pisang asli rebus", "qty": "2 porsi" },
+      { "name": "Ikan Gabus saos", "qty": "10-12 potong" },
+      {
+      "name": "Ikan Gabus (Pilih Olahan)",
+      "qty": "10-12 potong",
+      "options": ["Gabus Kuah Bening", "Gabus Kuah Kuning"]
+      },
+      { "name": "Sayur tumis", "qty": "3 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "2 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 5,
+    "nama": "Paket Makan Waena _Berempat_(2)",
+    "harga": 625000,
+    "deskripsi":"Paket Makan Waena menyajikan papeda hangat, umbi lokal, dan olahan ikan khas Papua dengan cita rasa autentik.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+      "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (4).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (6).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (2).jpg"
+              ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
+      { "name": "Papeda bungkus", "qty": "3 porsi" },
+      { "name": "Keladi tumbuk/campuran ubi", "qty": "1 porsi" },
+      { "name": "Pisang asli rebus", "qty": "1 porsi" },
+      {
+      "name": "Ikan Mujair (Pilih Olahan)",
+      "qty": "4-6 potong",
+      "options": ["Mujair Kuah Bening", "Mujair Kuah Kuning"]
+      },
+      { "name": "Ikan Gabus saos", "qty": "4-6 potong" },
+      { "name": "Sayur tumis", "qty": "1 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "1 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 6,
+    "nama": "Paket Makan Waena _Berempat_(3)",
+    "harga": 625000,
+    "deskripsi": "Paket Makan Waena menyajikan papeda hangat, umbi lokal, sayur, serta olahan ikan asar dan kuah bening khas.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (5).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (7).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).jpg"
+              ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
+      { "name": "Papeda bungkus", "qty": "3 porsi" },
+      { "name": "Keladi tumbuk/campuran ubi", "qty": "1 porsi" },
+      { "name": "Pisang asli rebus", "qty": "1 porsi" },
+      {
+      "name": "Ikan Mujair Asar (Pilih Olahan)",
+      "qty": "4-6 potong",
+      "options": ["Asar Saos", "Asar Goreng Santan"]
+      },
+      { "name": "Ikan Gabus kuah bening", "qty": "4-6 potong" },
+      { "name": "Sayur tumis", "qty": "1 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "1 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 7,
+    "nama": "Jus Alpukat",
+    "harga": 30000,
+    "kategori": "Minuman",
+    "sub": "Jus",
+    "sub_header": "Jus Buah Segar",
+    "deskripsi": "Jus alpukat lembut dengan susu dan simple syrup, ditaburi Milo.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-alpukat (1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-alpukat (2).jpg",
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-alpukat (3).jpg"
+              ]
+  },
+  {
+    "id": 8,
+    "nama": "Jus Jeruk",
+    "harga": 27000,
+    "kategori": "Minuman",
+    "sub": "Jus",
+    "deskripsi": "Jus jeruk segar dari perasan buah pilihan, rasanya manis alami yang menyegarkan.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-jeruk (1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-jeruk (2).jpg"
+              ]
+  },
+  {
+    "id": 61,
+    "nama": "Jus Sirsak",
+    "harga": 27000,
+    "kategori": "Minuman",
+    "sub": "Jus",
+    "deskripsi": "Jus sirsak segar dengan rasa asam-manis alami.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-sirsak.jpg"
+              ]
+  },
+  {
+    "id": 9,
+    "nama": "Jus Buah Naga",
+    "harga": 27000,
+    "kategori": "Minuman",
+    "sub": "Jus",
+    "deskripsi": "Jus buah naga segar yang ringan dan menyegarkan.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-naga (1).png",
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-naga (2).png",
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-naga (3).png"
+              ]
+  },
+  {
+    "id": 10,
+    "nama": "Jus Mangga",
+    "harga": 32000,
+    "kategori": "Minuman",
+    "sub": "Jus",
+    "deskripsi": "Jus mangga segar dengan rasa manis alami.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-mangga (1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-mangga (2).jpg",
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-mangga (3).jpg"
+              ]
+  },
+    {
+    "id": 60,
+    "nama": "Es Jeruk Nipis",
+    "harga": 32000,
+    "kategori": "Minuman",
+    "sub": "Jus",
+    "deskripsi": "Kesegaran perasan jeruk nipis murni dengan es batu, pelepas dahaga yang asam segar.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Jus/Es-jeruk-nipis.jpg"
+              ]
+  },
+  {
+    "id": 11,
+    "nama": "Es Teh Manis",
+    "harga": 20000,
+    "kategori": "Teh",
+    "sub": "Teh Biasa",
+    "sub_header": "Menu Teh Biasa",
+    "deskripsi": "Teh dingin dengan simple syrup.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Teh/Es-teh (1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Teh/Es-teh (2).jpg",
+      "assets/images/Menu-Isasai/Minuman/Teh/Es-teh (3).jpg"
+              ]
+  },
+  {
+    "id": 12,
+    "nama": "Es Lemon Tea",
+    "harga": 25000,
+    "kategori": "Teh",
+    "sub": "Teh Biasa",
+    "deskripsi": "Teh lemon disajikan dingin dengan irisan lemon segar.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Teh/Es-lemon-tea (1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Teh/Es-lemon-tea (2).jpg"
+              ]
+  },
+  {
+    "id": 13,
+    "nama": "Teh Pandan",
+    "harga": 20000,
+    "kategori": "Teh",
+    "sub": "Teh Biasa",
+    "deskripsi": "Teh hangat dengan aroma daun pandan segar, gula terpisah.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 14,
+    "nama": "Teh Susu",
+    "harga": 35000,
+    "kategori": "Teh",
+    "sub": "Teh Biasa",
+    "deskripsi": "Teh hangat dengan campuran susu yang creamy.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 15,
+    "nama": "Teh Herbal Daun Salam Jahe ⭐",
+    "harga": 26000,
+    "kategori": "Teh",
+    "sub": "Teh Herbal Papua",
+    "sub_header": "Teh Herbal Papua",
+    "deskripsi": "Rebusan jahe segar, daun salam, dan sereh dengan nipis dan gula seimbang. Gula putih dapat diganti gula merah sesuai permintaan.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh Herbal daun salam jahe.PNG",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh Herbal daun salam jahe1.png"
+              ]
+  },
+  {
+    "id": 16,
+    "nama": "Teh Kayu Masohi ⭐",
+    "harga": 37000,
+    "kategori": "Teh",
+    "sub": "Teh Herbal Papua",
+    "deskripsi": "Rebusan kayu masohi dan daun pandan dengan nipis dan gula merah, menghadirkan rasa khas dan hangat.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-kayu-masohi.PNG"
+              ]
+  },
+  {
+    "id": 17,
+    "nama": "Teh Kayu Akway Jahe",
+    "harga": 37000,
+    "kategori": "Teh",
+    "sub": "Teh Herbal Papua",
+    "deskripsi": "Teh dari pegunungan Arfak Papua Barat, rebusan kayu akway dan jahe dengan nipis dan gula.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-akway-jahe.PNG",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-akway-jahe-dks.PNG"
+              ]
+  },
+  {
+    "id": 18,
+    "nama": "Teh Sereh Cengkeh",
+    "harga": 20000,
+    "kategori": "Teh",
+    "sub": "Teh Herbal Papua",
+    "deskripsi": "Rebusan sereh dan cengkeh tanpa gula. Membantu melancarkan pencernaan dan kaya antioksidan.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-cengkeh.PNG"
+              ]
+  },
+  {
+    "id": 19,
+    "nama": "Teh Daun Libongga",
+    "harga": 27000,
+    "kategori": "Teh",
+    "sub": "Teh Herbal Papua",
+    "deskripsi": "Teh dari pegunungan Papua, daun tradisional bumbu bakar batu yang menambah nafsu makan.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-libongga.PNG"
+              ]
+  },
+  {
+    "id": 20,
+    "nama": "Teh Rumput Kebar",
+    "harga": 32000,
+    "kategori": "Teh",
+    "sub": "Teh Herbal Papua",
+    "deskripsi": "Rebusan rumput kebar dari Tambrauw. Membantu kesuburan, melancarkan haid, dan menyeimbangkan hormon.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 21,
+    "nama": "Teh Mint Mexico",
+    "harga": 30000,
+    "kategori": "Teh",
+    "sub": "Teh Herbal Papua",
+    "deskripsi": "Rebusan daun mint mexico (daun tebal) disajikan dengan campuran jeruk nipis dan gula.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-meksiko.PNG"
+              ]
+  },
+  {
+    "id": 22,
+    "nama": "Teh Moi Kamlowele",
+    "harga": 35000,
+    "kategori": "Teh",
+    "sub": "Teh Herbal Papua",
+    "deskripsi": "Rebusan bubuk kayu Kamlowele dari Moi, Sorong dengan campuran rempah, nipis dan gula merah.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 23,
+    "nama": "Es Kopi Isasai",
+    "harga": 35000,
+    "kategori": "Minuman",
+    "sub": "Kopi",
+    "sub_header": "Kopi Arabika Papua",
+    "deskripsi": "Kopi Isasai dengan campuran gula aren dan es batu memberi rasa pahit yang menyegarkan.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Kopi/Es-kopi-isasai (1).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Es-kopi-isasai (2).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Es-kopi-isasai (3).jpeg"
+              ]
+  },
+  {
+    "id": 24,
+    "nama": "Kopi Hitam V60",
+    "harga": 30000,
+    "kategori": "Minuman",
+    "sub": "Kopi",
+    "deskripsi": "Kopi hitam dari biji Arabika Papua, diseduh dengan metode V60.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-hitam (1).png",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-hitam (2).png",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-hitam (3).png"
+              ]
+  },
+  {
+    "id": 25,
+    "nama": "Kopi Hitam French Press",
+    "harga": 40000,
+    "kategori": "Minuman",
+    "sub": "Kopi",
+    "deskripsi": "Kopi hitam dari biji Arabika Papua, diseduh dengan metode French Press.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 26,
+    "nama": "Kopi Susu V60",
+    "harga": 35000,
+    "kategori": "Minuman",
+    "sub": "Kopi",
+    "deskripsi": "Kopi susu diseduh dengan metode V60, rasa kopi tetap dominan.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 27,
+    "nama": "Kopi Susu Vietnam Drip",
+    "harga": 35000,
+    "kategori": "Minuman",
+    "sub": "Kopi",
+    "deskripsi": "Kopi susu diseduh dengan metode Vietnam Drip, karakter rasa lebih kuat.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+  "id": 28,
+  "nama": "Milo Dino",
+  "harga": 25000,
+  "kategori": "Minuman",
+  "sub": "Special",
+  "isPaket": false,
+  "sub_header": "Minuman Special",
+  "deskripsi": "Minuman Milo dengan sedikit susu dan es batu, ditaburi Milo.",
+  "gambar": [
+    "assets/images/Menu-Isasai/Minuman/Special/Milo-dino (1).jpg",
+    "assets/images/Menu-Isasai/Minuman/Special/Milo-dino (2).jpg",
+    "assets/images/Menu-Isasai/Minuman/Special/Milo-dino-panas(1).png",
+    "assets/images/Menu-Isasai/Minuman/Special/Milo-dino-panas(2).png"
+  ],
+    "items": [
+    {
+      "name": "Hot/Cold",
+      "qty": "1 Gelas",
+      "options": ["Hot", "Cold"]
+    }
+  ]
+},
+  {
+    "id": 29,
+    "nama": "Chocolate Smoothie",
+    "harga": 35000,
+    "kategori": "Minuman",
+    "sub": "Special",
+    "isPaket": false,
+    "deskripsi": "Minuman cokelat dingin dari bubuk cokelat, susu, dan es batu.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Special/Chocolate-smoothie (1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Chocolate-smoothie (2).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Chocolate-smoothie-panas(1).png",
+      "assets/images/Menu-Isasai/Minuman/Special/Chocolate-smoothie-panas(2).png"
+              ],
+                "items": [
+    {
+      "name": "Hot/Cold",
+      "qty": "1 Gelas",
+      "options": ["Hot", "Cold"]
+    }
+  ]
+  },
+  {
+    "id": 30,
+    "nama": "Almond Latte",
+    "harga": 40000,
+    "kategori": "Minuman",
+    "sub": "Special",
+    "deskripsi": "Espresso dengan susu almond, rasa kopi kuat dengan sentuhan susu ringan.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte (1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte (2).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte (3).jpg"
+              ]
+  },
+  {
+    "id": 31,
+    "nama": "Hazelnut Latte",
+    "harga": 40000,
+    "kategori": "Minuman",
+    "sub": "Special",
+    "deskripsi": "Espresso dengan susu hazelnut, beraroma kacang dengan rasa kopi dominan.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+{
+  "id": 32,
+  "nama": "Marie Biscuit Latte",
+  "harga": 40000,
+  "kategori": "Minuman",
+  "sub": "Special",
+  "isPaket": false,
+  "deskripsi": "Espresso dengan susu marie biscuit, rasa biskuit lembut berpadu kopi kuat.",
+  "gambar": [
+    "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB(1).jpg",
+    "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB(2).jpg",
+    "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB-panas(1).jpg",
+    "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB-panas(2).jpg"
+  ],
+  "items": [
+    {
+      "name": "Hot/Cold",
+      "qty": "1 Gelas",
+      "options": ["Hot", "Cold"]
+    }
+  ]
+},
+  {
+    "id": 33,
+    "nama": "Salted Caramel Latte",
+    "harga": 40000,
+    "kategori": "Minuman",
+    "sub": "Special",
+    "deskripsi": "Espresso dengan susu dan perasa salted caramel, keseimbangan kopi kuat dan manis-gurih.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 41,
+    "nama": "Ikan Mujair Potongan (Kepala/Ekor)",
+    "harga": 55000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "sub_header": "IKAN MUJAIR ⭐",
+    "deskripsi": "Pilihan: digoreng biasa, kering, atau dimasak saos.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 42,
+    "nama": "Ikan Mujair Goreng Sedang",
+    "harga": 135000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Ikan mujair goreng utuh atau potongan (maks 3 bagian).",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 43,
+    "nama": "Ikan Mujair Kuah Bening/Kuning Besar",
+    "harga": 155000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Ikan mujair dalam kuah rempah ringan menyegarkan. Utuh atau potongan.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 44,
+    "nama": "Ikan Gabus Goreng Sedang ⭐",
+    "harga": 185000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "sub_header": "IKAN GABUS ⭐",
+    "deskripsi": "Ikan gabus Sentani digoreng utuh atau potongan (maks 4 potong).",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 45,
+    "nama": "Ikan Gabus Kuah Bening (Besar)",
+    "harga": 235000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Ikan gabus dalam kuah rempah kaya, gurih, dan menyegarkan. Maks 5 potong.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 37,
+    "nama": "Sempe Kecil (2-3 Orang)",
+    "harga": 45000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "sub_header": "PAPEDA SEMPE (PAPEDA PANAS)",
+    "deskripsi": "Papeda panas dalam helay tanah liat khas Sentani.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 38,
+    "nama": "Sempe Sedang (4-8 Orang)",
+    "harga": 85000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Papeda panas dalam helay tanah liat khas Sentani.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 39,
+    "nama": "Sempe Besar (Hingga 30 Orang)",
+    "harga": 185000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Papeda panas dalam helay tanah liat khas Sentani.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 34,
+    "nama": "Sayur Tumis",
+    "harga": 30000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "sub_header": "SAYUR & MAKANAN PENDAMPING",
+    "deskripsi": "Pilihan harian: kangkung, bunga pepaya, atau kombinasi dengan kacang panjang. Dimasak bawang putih & daun jeruk.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 35,
+    "nama": "Sayur Genemo Lilin Santan",
+    "harga": 40000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Sayur khas Papua tanpa minyak. Campuran terubuk (lilin) dan daun melinjo (genemo) dalam santan segar.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 47,
+    "nama": "Kukusan Ubi & Keladi",
+    "harga": 25000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Ubi ungu, ubi kuning, dan keladi kukus kaya serat. 6–8 potong, dapat dipesan terpisah atau campuran.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 36,
+    "nama": "Papeda Bungkus (Finukhu)",
+    "harga": 35000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Papeda khas Sentani dibungkus daun forofea, disajikan dingin. 1 porsi berisi 8 bungkus.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 40,
+    "nama": "Paket Kenyang Isasai",
+    "harga": 95000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "sub_header": "PAKET & HIDANGAN UTAMA",
+    "deskripsi": "Campuran ubi, keladi, pisang, sayur tumis/genemo, dan ikan mujair. Bisa ganti papeda/nasi.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 46,
+    "nama": "Ayam Asap Utuh ⭐",
+    "harga": 155000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "sub_header": "AYAM ASAP ⭐",
+    "deskripsi": "Ayam asap 1 hari penuh, aroma smokey. Bisa dengan aneka sambal atau saos tomat rempah.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 48,
+    "nama": "Dadar Sagu (Ou Afelea / Sinole)",
+    "harga": 25000,
+    "kategori": "Snack",
+    "sub":"Cemilan/Snack",
+    "sub_header":"Cemilan Kas",
+    "deskripsi": "Panganan tradisional dari sagu kering, kelapa parut, dan gula merah. 2 gulung, masing-masing dipotong 4 bagian.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 51,
+    "nama": "Ubi Goreng (Ungu / Kuning)",
+    "harga": 25000,
+    "kategori": "Snack",
+    "deskripsi": "Ubi digoreng dengan rasa manis alami, disajikan dengan sambal goreng.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 49,
+    "nama": "Singkong Goreng",
+    "harga": 30000,
+    "kategori": "Snack",
+    "deskripsi": "Singkong direbus lalu digoreng hingga renyah, disajikan dengan sambal goreng.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 50,
+    "nama": "Kentang Goreng",
+    "harga": 30000,
+    "kategori": "Snack",
+    "deskripsi": "Kentang digoreng keemasan, disajikan dengan saos tomat dan saos sambal.",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 52,
+    "nama": "Pisang Goreng",
+    "harga": 25000,
+    "kategori": "Snack",
+    "deskripsi": "Pisang digoreng harum dan keemasan, disajikan dengan sambal goreng.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Snack/Pisang-goreng (1).png",
+      "assets/images/Menu-Isasai/Snack/Pisang-goreng (2).png",
+      "assets/images/Menu-Isasai/Snack/Pisang-goreng (3).png"
+              ]
+  },
+{
+  "id": 53,
+  "nama": "Tumpeng Pisang",
+  "harga": 25000,
+  "kategori": "Tumpeng",
+  "sub": "Tumpeng",
+  "deskripsi": "Tumpeng Pisang, dibuat dengan cita rasa.",
+  "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+},
+{
+    "id": 54,
+    "nama": "Nasi Putih",
+    "harga": 10000,
+    "kategori": "Extra",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 55,
+    "nama": "Extra Sambal",
+    "harga": 5000,
+    "kategori": "Extra",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 56,
+    "nama": "Extra Nipis",
+    "harga": 5000,
+    "kategori": "Extra",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 57,
+    "nama": "Extra Kelapa",
+    "harga": 5000,
+    "kategori": "Extra",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 58,
+    "nama": "Extra Kuah Asam",
+    "harga": 10000,
+    "kategori": "Extra",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 59,
+    "nama": "Extra Shot of Espresso",
+    "harga": 15000,
+    "kategori": "Extra",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  },
+  {
+    "id": 59,
+    "nama": "Air Mineral 500ML",
+    "harga": 15000,
+    "kategori": "Extra",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+  }
+]
