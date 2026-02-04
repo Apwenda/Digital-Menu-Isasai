@@ -213,7 +213,8 @@
     "sub": "Jus",
     "deskripsi": "Jus sirsak segar dengan rasa asam-manis alami.",
     "gambar": [
-      "assets/images/Menu-Isasai/Minuman/Jus/Jus-sirsak.jpg"
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-sirsak(1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Jus/Jus-sirsak(2).png"
               ]
   },
   {
@@ -688,9 +689,9 @@
     "sub_header": "SAYUR & MAKANAN PENDAMPING",
     "deskripsi": "Pilihan harian: kangkung, bunga pepaya, atau kombinasi dengan kacang panjang. Dimasak bawang putih & daun jeruk.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sayur-tumis (1).png",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sayur-tumis (2).png",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sayur-tumis (3).png"
               ]
   },
   {
@@ -701,9 +702,9 @@
     "sub": "Menu Satuan",
     "deskripsi": "Sayur khas Papua tanpa minyak. Campuran terubuk (lilin) dan daun melinjo (genemo) dalam santan segar.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sayur-genemo (1).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sayur-genemo (2).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sayur-genemo (3).jpg"
               ]
   },
   {
@@ -714,9 +715,11 @@
     "sub": "Menu Satuan",
     "deskripsi": "Ubi ungu, ubi kuning, dan keladi kukus kaya serat. 6–8 potong, dapat dipesan terpisah atau campuran.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ubi-kuning-rebus.jpg.jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ubi-unggu-rebus.jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Keladi-rebus.jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ubi-keladi- (1).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/kombinasi-ubi,keladi,.jpg"
               ]
   },
   {
@@ -727,9 +730,9 @@
     "sub": "Menu Satuan",
     "deskripsi": "Papeda khas Sentani dibungkus daun forofea, disajikan dingin. 1 porsi berisi 8 bungkus.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Pepeda-bungkus-Finukhu (1).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Pepeda-bungkus-Finukhu (2).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Pepeda-bungkus-Finukhu (3).jpg"
               ]
   },
   {
@@ -741,9 +744,8 @@
     "sub_header": "PAKET & HIDANGAN UTAMA",
     "deskripsi": "Campuran ubi, keladi, pisang, sayur tumis/genemo, dan ikan mujair. Bisa ganti papeda/nasi.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Paket-k-isasai.jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Paket-k-isasai1.jpg"
               ]
   },
   {
@@ -781,9 +783,8 @@
     "kategori": "Snack",
     "deskripsi": "Ubi digoreng dengan rasa manis alami, disajikan dengan sambal goreng.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Snack/Ubi-goreng-u.png",
+      "assets/images/Menu-Isasai/Snack/Ubi-goreng-k.png"
               ]
   },
   {
@@ -825,6 +826,45 @@
 {
   "id": 53,
   "nama": "Tumpeng Pisang",
+  "harga": 25000,
+  "kategori": "Tumpeng",
+  "sub": "Tumpeng",
+  "deskripsi": "Tumpeng Pisang, dibuat dengan cita rasa.",
+  "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+},
+{
+  "id": 62,
+  "nama": "Tumpeng ubi + Singkong",
+  "harga": 25000,
+  "kategori": "Tumpeng",
+  "sub": "Tumpeng",
+  "deskripsi": "Tumpeng Pisang, dibuat dengan cita rasa.",
+  "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+},
+{
+  "id": 63,
+  "nama": "Tumpeng Keladi",
+  "harga": 25000,
+  "kategori": "Tumpeng",
+  "sub": "Tumpeng",
+  "deskripsi": "Tumpeng Pisang, dibuat dengan cita rasa.",
+  "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+              ]
+},
+{
+  "id": 64,
+  "nama": "Tumpeng Ubi",
   "harga": 25000,
   "kategori": "Tumpeng",
   "sub": "Tumpeng",
