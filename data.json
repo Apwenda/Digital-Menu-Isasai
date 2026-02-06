@@ -286,9 +286,17 @@
     "sub": "Teh Biasa",
     "deskripsi": "Teh hangat dengan aroma daun pandan segar, gula terpisah.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-pandan(1).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-pandan(2).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-pandan-dingin.png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-pandan-dingin(1).png"
+    ],
+    "items": [
+      {
+        "name": "Hot/Cold",
+        "qty": "1 Gelas",
+        "options": ["Hot", "Cold"]
+      }
     ]
   },
   {
