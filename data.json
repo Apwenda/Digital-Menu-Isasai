@@ -441,9 +441,9 @@
     "sub": "Kopi",
     "deskripsi": "Kopi hitam dari biji Arabika Papua, diseduh dengan metode French Press.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-Hitam-French-Press (2).png",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-Hitam-French-Press (1).png",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-Hitam-French-Press(3).png"
     ]
   },
   {
@@ -585,11 +585,25 @@
     "kategori": "Makanan",
     "sub": "Menu Satuan",
     "sub_header": "IKAN MUJAIR ⭐",
-    "deskripsi": "Pilihan: digoreng biasa, kering, atau dimasak saos.",
+    "deskripsi": "Potongan ikan mujair: digoreng biasa, digoreng kering, atau dimasak saos.",
     "gambar": [
       "assets/menupaket.png",
       "assets/menupaket.png",
       "assets/menu paket.png"
+    ],
+    "items": [
+      {
+        "name": "Pilih Olahan",
+        "qty": "1 Porsi",
+        "options": ["Goreng Biasa", "Goreng Kering", "Masak Saos"]
+      }
+    ],
+    "items1": [
+      {
+        "name": "Kepala/Ekor",
+        "qty": "1 Porsi",
+        "options": ["Ekor", "Kepala"]
+      }
     ]
   },
   {
@@ -640,9 +654,8 @@
     "sub": "Menu Satuan",
     "deskripsi": "Ikan gabus dalam kuah rempah kaya, gurih, dan menyegarkan. Maks 5 potong.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan gabus kuah bening (1).png",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan gabus kuah bening (2).png"
     ]
   },
   {
