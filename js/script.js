@@ -589,17 +589,34 @@ function showProductDetail(id) {
 
   const container = document.getElementById("detail-menu-content");
 
-  // Carousel images
   const images = item.gambar
     .map(
       (img, i) => `
     <div class="carousel-item ${i === 0 ? "active" : ""}">
       <img src="${img}" class="d-block w-100" style="height: auto; max-height: 350px; object-fit: contain; background: #f8f9fa;">
-    </div>`,
+    </div>`
     )
     .join("");
 
-  // Struktur HTML
+  // Fungsi helper untuk merender list item (agar tidak duplikasi kode)
+  const renderList = (listData, prefix) => {
+    if (!listData) return "";
+    return listData.map((p, index) => `
+      <li class="border-bottom border-light py-3">
+        <div class="d-flex justify-content-between align-items-center ${p.options ? 'mb-2' : ''}">
+            <span><i class="bi bi-check-circle-fill me-2" style="color: #004225;"></i>${p.name}</span>
+            <span class="badge bg-white text-dark border" style="border-color: #FFCC00 !important;">${p.qty}</span>
+        </div>
+        ${p.options ? `
+          <select class="form-select form-select-sm border-warning"
+                  name="${prefix}-${index}" style="border-color: #FFCC00 !important;" required>
+            <option value="" selected disabled>-- Pilih salah satu --</option>
+            ${p.options.map(opt => `<option value="${opt}">${opt}</option>`).join("")}
+          </select>
+        ` : ""}
+      </li>`).join("");
+  };
+
   container.innerHTML = `
     <div class="modal-header border-0 position-absolute w-100 z-3">
         <button type="button" class="btn-close bg-white p-2 rounded-circle shadow-sm ms-auto" data-bs-dismiss="modal"></button>
@@ -608,18 +625,14 @@ function showProductDetail(id) {
     <div class="modal-body p-0" style="overflow-y: auto; max-height: 85vh;">
         <div id="carouselDetail" class="carousel slide bg-light">
             <div class="carousel-inner">${images}</div>
-            ${
-              item.gambar.length > 1
-                ? `
+            ${item.gambar.length > 1 ? `
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselDetail" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselDetail" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
-            `
-                : ""
-            }
+            ` : ""}
         </div>
 
         <div class="p-4">
@@ -630,39 +643,19 @@ function showProductDetail(id) {
             <h6 class="fw-bold text-dark">Deskripsi:</h6>
             <p class="text-muted small mb-4">${item.deskripsi || "Tidak ada deskripsi tersedia."}</p>
 
-            ${
-              item.items
-                ? `
+            ${(item.items || item.items1) ? `
               <div class="mt-4 p-3 rounded" style="background-color: rgba(0, 66, 37, 0.05);">
                 <h6 class="fw-bold text-dark">
-                    <i class="bi ${item.isPaket ? 'bi-box-seam' : 'bi-gear-wide-connected'} me-2"></i>
-                    ${item.isPaket ? 'Isi Paket & Pilihan:' : 'Pilih-Olahan:'}
+                    <i class="bi bi-gear-wide-connected me-2"></i>Pilihan Menu:
                 </h6>
 
                 <form id="form-opsi-paket-${item.id}">
                   <ul class="list-unstyled mb-0">
-                    ${item.items
-                      .map(
-                        (p, index) => `
-                      <li class="border-bottom border-light py-3">
-                        <div class="d-flex justify-content-between align-items-center ${p.options ? 'mb-2' : ''}">
-                            <span><i class="bi bi-check-circle-fill me-2" style="color: #004225;"></i>${p.name}</span>
-                            <span class="badge bg-white text-dark border" style="border-color: #FFCC00 !important;">${p.qty}</span>
-                        </div>
-                        ${p.options ? `
-                          <select class="form-select form-select-sm border-warning"
-                                  name="opsi-${index}" style="border-color: #FFCC00 !important;" required>
-                            <option value="" selected disabled>-- Pilih salah satu --</option>
-                            ${p.options.map(opt => `<option value="${opt}">${opt}</option>`).join("")}
-                          </select>
-                        ` : ""}
-                      </li>`,
-                      )
-                      .join("")}
+                    ${renderList(item.items, 'opsi')}
+                    ${renderList(item.items1, 'opsi1')}
                   </ul>
                 </form>
-              </div>`
-                : ""
+              </div>` : ""
             }
 
             <div class="mt-5 mb-2">
@@ -675,9 +668,7 @@ function showProductDetail(id) {
     </div>
   `;
 
-  const myModal = new bootstrap.Modal(
-    document.getElementById("detailMenuModal"),
-  );
+  const myModal = new bootstrap.Modal(document.getElementById("detailMenuModal"));
   myModal.show();
 }
 
