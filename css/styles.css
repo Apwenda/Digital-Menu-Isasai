@@ -1,181 +1,252 @@
-/* --- TUMPENG CUSTOM STYLE --- */
+body { font-family: 'Montserrat', sans-serif; }
 
-:root {
-    --isasai-green: #004225;
-    --isasai-orange: #FF8C00;
-    --isasai-yellow: #FFCC00;
-    --isasai-light-green: rgba(0, 66, 37, 0.05);
+/* --- CAROUSEL OPTIMIZATION --- */
+/* Membatasi lebar maksimal di desktop agar tidak terlalu besar */
+#carouselPromo {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto; /* Center secara horizontal */
 }
 
-/* 1. Container & Cards */
-.tumpeng-card {
-    border: none;
-    border-radius: 20px;
-    background: #ffffff;
-    transition: transform 0.2s ease;
+/* Memastikan gambar tampil kotak/proporsional dan tidak terpotong */
+#carouselPromo .carousel-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Atau gunakan 1 / 1 jika gambar Anda kotak sempurna */
+    object-fit: contain;
+    background-color: #f8f9fa; /* Background netral jika gambar tidak memenuhi wadah */
+    border-radius: 16px;
 }
 
-/* Garis putus-putus untuk area Random */
-.border-dashed {
-    border: 2px dashed var(--isasai-yellow) !important;
-    background-color: #fffdf5;
-    transition: all 0.3s ease;
+/* Responsif untuk Mobile: Biarkan melebar penuh di layar kecil */
+@media (max-width: 768px) {
+    #carouselPromo {
+        max-width: 100%;
+    }
+    #carouselPromo .carousel-item img {
+        aspect-ratio: 1 / 1; /* Di mobile biasanya lebih bagus kotak (square) */
+    }
 }
 
-/* 2. Custom Radio & Checkbox Buttons */
-/* Mengubah tampilan tombol checkbox agar lebih premium */
-.btn-check:checked + .btn-outline-success {
-    background-color: var(--isasai-green) !important;
-    border-color: var(--isasai-green) !important;
-    color: #ffffff !important;
-    box-shadow: 0 4px 10px rgba(0, 66, 37, 0.2);
+/* Tombol panah navigasi */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 66, 37, 0.5);
+    border-radius: 50%;
+    background-size: 50% 50%;
+    padding: 15px;
 }
 
-.btn-outline-success {
-    color: var(--isasai-green);
-    border-color: var(--isasai-green);
-    border-width: 1.5px;
-    border-radius: 10px;
-    font-weight: 600;
-    padding: 10px;
+.carousel-indicators {
+    margin-bottom: 0.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
 }
+.carousel-indicators::-webkit-scrollbar { display: none; }
 
-.btn-outline-success:hover {
-    background-color: var(--isasai-light-green);
-    color: var(--isasai-green);
-}
-
-/* 3. Form Sections */
+/* --- FORM & UI ELEMENTS (Tetap seperti asli) --- */
 .section-label {
-    display: block;
-    font-size: 0.75rem;
-    letter-spacing: 1px;
+    font-size: 11px;
     font-weight: 800;
-    color: #6c757d;
+    color: #004225;
     margin-bottom: 12px;
-    border-left: 4px solid var(--isasai-orange);
+    display: block;
+    border-left: 4px solid #FF8C00;
     padding-left: 10px;
 }
 
-/* 4. Keranjang Tumpeng Cards (Unique per combination) */
-.cart-tumpeng-item {
-    background: white;
-    border-left: 5px solid var(--isasai-green) !important;
-    border-radius: 15px;
-    overflow: hidden;
-    animation: slideIn 0.3s ease-out;
-}
+.border-dashed { border: 2px dashed #FFCC00; }
 
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.cart-tumpeng-item .item-title {
-    color: var(--isasai-green);
-    font-family: 'Playfair Display', serif;
-}
-
-/* 5. Quantity Controls */
-.qty-control {
-    background: #f1f1f1;
-    border-radius: 25px;
-    padding: 4px;
-    display: inline-flex;
-    align-items: center;
-}
-
-.qty-btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 50% !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background: white;
-    color: var(--isasai-green);
+.color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 5px;
+    border: 3px solid #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: background 0.2s;
+    transition: 0.2s;
 }
 
-.qty-btn:active {
-    background: var(--isasai-orange);
-    color: white;
+.btn-check:checked + label .color-circle {
+    border: 3px solid #FF8C00;
+    transform: scale(1.1);
 }
 
-/* 6. Checkout Section */
-.sticky-bottom-total {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: white;
-    padding: 15px 20px;
-    box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
-    z-index: 1000;
+.btn-outline-success {
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px;
 }
 
 .btn-cta-orange {
-    background: linear-gradient(135deg, #FF8C00 0%, #ffab40 100%);
+    background: #FF8C00;
     color: white;
     border: none;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
+.btn-cta-orange:hover { background: #e67e00; color: white; }
+.btn-cta-orange:disabled { background: #ccc; cursor: not-allowed; }
 
-.btn-cta-orange:disabled {
-    background: #cccccc;
-    opacity: 0.7;
-}
-
-.btn-cta-orange:not(:disabled):hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 15px rgba(255, 140, 0, 0.3);
-}
-
-/* 7. Typography */
-.text-orange {
-    color: var(--isasai-orange);
-}
-
-/* Slider Promo Tumpeng */
-#carouselPromo {
-    border: 3px solid #fff;
-}
-
-#carouselPromo img {
-    filter: brightness(0.9);
-}
-
-.carousel-indicators [data-bs-target] {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: var(--isasai-orange);
-}
-
-/* Keranjang Styling */
 .cart-tumpeng-item {
-    transition: all 0.2s ease;
+    animation: fadeInUp 0.4s ease forwards;
 }
 
-.qty-control {
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-control:focus {
+    border-color: #004225;
+    box-shadow: 0 0 0 0.25rem rgba(0, 66, 37, 0.1);
+}
+
+.text-orange { color: #FF8C00 !important; }
+
+/* Styling Tambahan untuk Form Pembayaran */
+.form-select:focus {
+    border-color: #004225;
+    box-shadow: 0 0 0 0.25rem rgba(0, 66, 37, 0.1);
+}
+
+#customer-info-form .alert-warning {
+    color: #856404;
+    font-weight: 500;
+}
+
+/* Pastikan Carousel tetap proporsional sesuai perbaikan sebelumnya */
+#carouselPromo {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+}
+
+#carouselPromo .carousel-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+    #carouselPromo { max-width: 100%; }
+    #carouselPromo .carousel-item img { aspect-ratio: 1 / 1; }
+}
+
+/* --- UI KERANJANG PROFESIONAL RATA KIRI --- */
+.cart-item-pro {
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #edf2f7;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.cart-header-pro {
+    padding: 12px 16px;
     background: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 30px;
-    padding: 2px 10px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.qty-btn {
-    background: transparent;
-    border: none;
-    color: var(--isasai-green);
-    font-size: 1.2rem;
-    padding: 0 5px;
+.badge-racikan {
+    font-size: 10px;
+    font-weight: 800;
+    color: #004225;
+    background: #e6f3ec;
+    padding: 4px 12px;
+    border-radius: 50px;
 }
 
-.qty-btn:hover {
-    color: var(--isasai-orange);
+.cart-body-pro {
+    padding: 16px;
+    text-align: left; /* Memastikan semua teks di dalam body rata kiri */
+}
+
+.detail-block {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column; /* Mengubah rincian menjadi baris bertumpuk ke bawah (rata kiri) */
+}
+
+.detail-block .label {
+    font-size: 10px;
+    color: #718096;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.detail-block .value {
+    font-size: 13px;
+    color: #2d3748;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.note-box-pro {
+    margin-top: 15px;
+    padding: 10px;
+    background: #fdfaf5;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #4a5568;
+    border-left: 4px solid #FF8C00;
+}
+
+.cart-footer-pro {
+    padding: 12px 16px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #e2e8f0;
+}
+
+/* Kontrol Qty & Harga */
+.qty-control-pro {
+    display: flex;
+    align-items: center;
+    background: #f1f3f5;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.qty-control-pro button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: white;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.qty-num {
+    margin: 0 15px;
+    font-weight: 700;
+    color: #004225;
+}
+
+.price-pro span {
+    font-weight: 800;
+    font-size: 16px;
+    color: #FF8C00;
+}
+
+.btn-delete-pro {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.btn-delete-pro:hover {
+    background-color: #bb2d3b;
 }
