@@ -839,22 +839,6 @@
     ]
   },
   {
-  "id": 99,
-  "nama": "Tumpeng Custom Pangan Lokal",
-  "harga": 75000,
-  "kategori": "Makanan",
-  "sub": "Tumpeng",
-  "isCustomTumpeng": true,
-  "customOptions": {
-    "tumpeng": ["Keladi", "Ubi", "Singkong", "Pisang"],
-    "lauk": ["Ayam Goreng", "Ikan Bakar", "Daging Sapi"],
-    "sayur": ["Urap Sayur", "Tumis Kangkung"],
-    "olahan": ["Ikan Saus", "Goreng Tepung", "Kuah Kuning"]
-  },
-  "gambar": ["assets/Logo-isasai1.png"],
-  "deskripsi": "Rancang tumpeng khas Papua Anda sendiri."
-  },
-  {
     "id": 54,
     "nama": "Nasi Putih",
     "harga": 10000,
