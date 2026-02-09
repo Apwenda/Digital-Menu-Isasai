@@ -84,7 +84,7 @@
                                 Makanan
                             </button>
                             <ul class="dropdown-menu shadow">
-                                <li
+                                <li>
                                     <button type="button" class="dropdown-item"
                                         onclick="filterSub('Paket/Combo')">Paket / Combo</button>
                                 </li>
@@ -99,10 +99,6 @@
                                 <li>
                                     <button type="button" class="dropdown-item"
                                     onclick="window.location.href='Hampers'">Hampers</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="dropdown-item"
-                                    onclick="window.location.href='Snack Plate-Isasai'">Snack Plate-Isasai</button>
                                 </li>
                             </ul>
                         </div>
@@ -125,7 +121,21 @@
                             </ul>
                         </div>
 
-                        <button type="button" onclick="filterMenu('Snack')" class="btn btn-cat fw-bold">Snack</button>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-cat dropdown-toggle fw-bold" data-bs-toggle="dropdown">
+                                Snack
+                            </button>
+                            <ul class="dropdown-menu shadow">
+                                <li>
+                                    <button type="button" class="dropdown-item"
+                                        onclick="filterSub('Snack Lokal')">Snack Pangan Lokal</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item"
+                                        onclick="filterSub('Snack Plate')">Snack Plate-Isasai</button>
+                                </li>
+                            </ul>
+                        </div>
                         <button type="button" onclick="filterMenu('Extra')" class="btn btn-cat fw-bold">Extra</button>
                     </div>
                 </div>
