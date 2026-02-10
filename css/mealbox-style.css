@@ -1,0 +1,12 @@
+body { font-family: 'Montserrat', sans-serif; }
+.section-label { font-size: 0.75rem; color: #004225; letter-spacing: 1px; }
+.btn-outline-success { border-radius: 12px; font-weight: 600; border-width: 2px; }
+.cart-item-pro { border-left: 4px solid #198754; }
+
+/* FIX IMAGE ZOOM */
+.carousel-item img {
+    aspect-ratio: 16 / 9;
+    object-fit: contain !important;
+    background-color: #f8f9fa;
+    border-radius: 16px;
+}
