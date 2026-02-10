@@ -784,7 +784,7 @@
     "nama": "Dadar Sagu (Ou Afelea / Sinole)",
     "harga": 25000,
     "kategori": "Snack",
-    "sub": "Cemilan/Snack",
+    "sub":"Snack Pangan Lokal",
     "sub_header": "Cemilan Kas",
     "deskripsi": "Panganan tradisional dari sagu kering, kelapa parut, dan gula merah. 2 gulung, masing-masing dipotong 4 bagian.",
     "gambar": [
@@ -798,6 +798,7 @@
     "nama": "Ubi Goreng (Ungu / Kuning)",
     "harga": 25000,
     "kategori": "Snack",
+    "sub":"Snack Pangan Lokal",
     "deskripsi": "Ubi digoreng dengan rasa manis alami, disajikan dengan sambal goreng.",
     "gambar": [
       "assets/images/Menu-Isasai/Snack/Ubi-goreng-u.png",
@@ -809,6 +810,7 @@
     "nama": "Singkong Goreng",
     "harga": 30000,
     "kategori": "Snack",
+    "sub":"Snack Pangan Lokal",
     "deskripsi": "Singkong direbus lalu digoreng hingga renyah, disajikan dengan sambal goreng.",
     "gambar": [
       "assets/images/Menu-Isasai/Snack/Singkong-goreng.png",
@@ -820,6 +822,7 @@
     "nama": "Kentang Goreng",
     "harga": 30000,
     "kategori": "Snack",
+    "sub":"Snack Pangan Lokal",
     "deskripsi": "Kentang digoreng keemasan, disajikan dengan saos tomat dan saos sambal.",
     "gambar": [
       "assets/images/Menu-Isasai/Snack/Kentang-goreng (1).png",
@@ -831,6 +834,7 @@
     "nama": "Pisang Goreng",
     "harga": 25000,
     "kategori": "Snack",
+    "sub":"Snack Pangan Lokal",
     "deskripsi": "Pisang digoreng harum dan keemasan, disajikan dengan sambal goreng.",
     "gambar": [
       "assets/images/Menu-Isasai/Snack/Pisang-goreng (1).png",
