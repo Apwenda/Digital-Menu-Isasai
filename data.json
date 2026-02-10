@@ -307,9 +307,17 @@
     "sub": "Teh Biasa",
     "deskripsi": "Teh hangat dengan campuran susu yang creamy.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Minuman/Teh/Es-teh-susu (1).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Teh/Es-teh-susu (2).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Teh/Es-teh-susu (3).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-susu-panas.jpeg"
+    ],
+    "items": [
+      {
+        "name": "Hot/Cold",
+        "qty": "1 Gelas",
+        "options": ["Hot", "Cold"]
+      }
     ]
   },
   {
@@ -401,9 +409,9 @@
     "sub": "Teh Herbal Papua",
     "deskripsi": "Rebusan bubuk kayu Kamlowele dari Moi, Sorong dengan campuran rempah, nipis dan gula merah.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-kamlowele (1).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-kamlowele (2).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-kamlowele (3).jpeg"
     ]
   },
   {
@@ -454,9 +462,9 @@
     "sub": "Kopi",
     "deskripsi": "Kopi susu diseduh dengan metode V60, rasa kopi tetap dominan.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-v60 (1).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-v60 (2).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-v60 (3).jpeg"
     ]
   },
   {
@@ -467,9 +475,9 @@
     "sub": "Kopi",
     "deskripsi": "Kopi susu diseduh dengan metode Vietnam Drip, karakter rasa lebih kuat.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-susu-vietnam-drip (1).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-susu-vietnam-drip (2).jpeg",
+      "assets/images/Menu-Isasai/Minuman/Kopi/Kopi-susu-vietnam-drip (3).jpeg"
     ]
   },
   {
