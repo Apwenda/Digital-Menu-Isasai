@@ -64,9 +64,9 @@
     ]
   },
   {
-    "id": 4,
+    "id": 3,
     "nama": "Paket Makan Isasai (10 Orang) - V2",
-    "harga": 1550000,
+    "harga": 1750000,
     "deskripsi": "Paket Makan Isasai menyajikan papeda, umbi lokal, dan olahan ikan pilihan untuk kebersamaan sepuluh orang keluarga besar.",
     "kategori": "Makanan",
     "sub": "Paket/Combo",
@@ -93,9 +93,9 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "nama": "Paket Makan Isasai (10 Orang) - V1",
-    "harga": 1750000,
+    "harga": 1550000,
     "deskripsi": "Paket Makan Isasai menghadirkan papeda hangat, umbi lokal, serta olahan ikan khas Papua untuk sepuluh orang bersama.",
     "kategori": "Makanan",
     "sub": "Paket/Combo",
@@ -118,6 +118,35 @@
       },
       { "name": "Sayur tumis", "qty": "3 porsi" },
       { "name": "Sayur genemo lilin santan", "qty": "2 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 5,
+    "nama": "Paket Makan Waena _Berempat_()",
+    "harga": 625000,
+    "deskripsi": "Paket Makan Waena menyajikan papeda hangat, umbi lokal, dan olahan ikan khas Papua dengan cita rasa autentik.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (4).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (6).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (2).jpg"
+    ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
+      { "name": "Papeda bungkus", "qty": "3 porsi" },
+      { "name": "Keladi tumbuk/campuran ubi", "qty": "1 porsi" },
+      { "name": "Pisang asli rebus", "qty": "1 porsi" },
+      {
+        "name": "Ikan Mujair (Pilih Olahan)",
+        "qty": "4-6 potong",
+        "options": ["Mujair Kuah Bening", "Mujair Kuah Kuning"]
+      },
+      { "name": "Ikan Gabus saos", "qty": "4-6 potong" },
+      { "name": "Sayur tumis", "qty": "1 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "1 porsi" },
       { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
     ]
   },
@@ -206,7 +235,7 @@
     ]
   },
   {
-    "id": 61,
+    "id": 9,
     "nama": "Jus Sirsak",
     "harga": 27000,
     "kategori": "Minuman",
@@ -218,7 +247,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 10,
     "nama": "Jus Buah Naga",
     "harga": 27000,
     "kategori": "Minuman",
@@ -231,7 +260,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 11,
     "nama": "Jus Mangga",
     "harga": 32000,
     "kategori": "Minuman",
@@ -244,7 +273,7 @@
     ]
   },
   {
-    "id": 60,
+    "id": 12,
     "nama": "Es Jeruk Nipis",
     "harga": 32000,
     "kategori": "Minuman",
@@ -253,7 +282,7 @@
     "gambar": ["assets/images/Menu-Isasai/Minuman/Jus/Es-jeruk-nipis.jpg"]
   },
   {
-    "id": 11,
+    "id": 13,
     "nama": "Es Teh Manis",
     "harga": 20000,
     "kategori": "Teh",
@@ -267,7 +296,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 14,
     "nama": "Es Lemon Tea",
     "harga": 25000,
     "kategori": "Teh",
@@ -279,7 +308,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 15,
     "nama": "Teh Pandan",
     "harga": 20000,
     "kategori": "Teh",
@@ -300,7 +329,7 @@
     ]
   },
   {
-    "id": 14,
+    "id": 16,
     "nama": "Teh Susu",
     "harga": 35000,
     "kategori": "Teh",
@@ -321,7 +350,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": 17,
     "nama": "Teh Herbal Daun Salam Jahe ⭐",
     "harga": 26000,
     "kategori": "Teh",
@@ -334,7 +363,7 @@
     ]
   },
   {
-    "id": 16,
+    "id": 18,
     "nama": "Teh Kayu Masohi ⭐",
     "harga": 37000,
     "kategori": "Teh",
@@ -346,7 +375,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 19,
     "nama": "Teh Kayu Akway Jahe",
     "harga": 37000,
     "kategori": "Teh",
@@ -359,7 +388,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 20,
     "nama": "Teh Sereh Cengkeh",
     "harga": 20000,
     "kategori": "Teh",
@@ -371,7 +400,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 21,
     "nama": "Teh Daun Libongga",
     "harga": 27000,
     "kategori": "Teh",
@@ -383,7 +412,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 22,
     "nama": "Teh Rumput Kebar",
     "harga": 32000,
     "kategori": "Teh",
@@ -395,7 +424,7 @@
     ]
   },
   {
-    "id": 21,
+    "id": 23,
     "nama": "Teh Mint Mexico",
     "harga": 30000,
     "kategori": "Teh",
@@ -407,7 +436,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 24,
     "nama": "Teh Moi Kamlowele",
     "harga": 35000,
     "kategori": "Teh",
@@ -420,7 +449,7 @@
     ]
   },
   {
-    "id": 23,
+    "id": 25,
     "nama": "Es Kopi Isasai",
     "harga": 35000,
     "kategori": "Minuman",
@@ -434,7 +463,7 @@
     ]
   },
   {
-    "id": 24,
+    "id": 26,
     "nama": "Kopi Hitam V60",
     "harga": 30000,
     "kategori": "Minuman",
@@ -447,7 +476,7 @@
     ]
   },
   {
-    "id": 25,
+    "id": 27,
     "nama": "Kopi Hitam French Press",
     "harga": 40000,
     "kategori": "Minuman",
@@ -460,7 +489,7 @@
     ]
   },
   {
-    "id": 26,
+    "id": 27,
     "nama": "Kopi Susu V60",
     "harga": 35000,
     "kategori": "Minuman",
@@ -473,7 +502,7 @@
     ]
   },
   {
-    "id": 27,
+    "id": 29,
     "nama": "Kopi Susu Vietnam Drip",
     "harga": 35000,
     "kategori": "Minuman",
@@ -486,7 +515,7 @@
     ]
   },
   {
-    "id": 28,
+    "id": 30,
     "nama": "Milo Dino",
     "harga": 25000,
     "kategori": "Minuman",
@@ -509,7 +538,7 @@
     ]
   },
   {
-    "id": 29,
+    "id": 31,
     "nama": "Chocolate Smoothie",
     "harga": 35000,
     "kategori": "Minuman",
@@ -531,7 +560,7 @@
     ]
   },
   {
-    "id": 30,
+    "id": 32,
     "nama": "Almond Latte",
     "harga": 40000,
     "kategori": "Minuman",
@@ -552,7 +581,7 @@
     ]
   },
   {
-    "id": 31,
+    "id": 33,
     "nama": "Hazelnut Latte",
     "harga": 40000,
     "kategori": "Minuman",
@@ -573,7 +602,7 @@
     ]
   },
   {
-    "id": 32,
+    "id": 34,
     "nama": "Marie Biscuit Latte",
     "harga": 40000,
     "kategori": "Minuman",
@@ -595,7 +624,7 @@
     ]
   },
   {
-    "id": 33,
+    "id": 35,
     "nama": "Salted Caramel Latte",
     "harga": 40000,
     "kategori": "Minuman",
@@ -616,7 +645,7 @@
     ]
   },
   {
-    "id": 41,
+    "id": 36,
     "nama": "Ikan Mujair Potongan (Kepala/Ekor)",
     "harga": 55000,
     "kategori": "Makanan",
@@ -643,7 +672,7 @@
     ]
   },
   {
-    "id": 42,
+    "id": 37,
     "nama": "Ikan Mujair Goreng Sedang",
     "harga": 135000,
     "kategori": "Makanan",
@@ -667,7 +696,7 @@
     ]
   },
   {
-    "id": 43,
+    "id": 38,
     "nama": "Ikan Mujair Kuah Bening/Kuning Besar",
     "harga": 155000,
     "kategori": "Makanan",
@@ -686,21 +715,49 @@
     ]
   },
   {
-    "id": 44,
+    "id": 39,
     "nama": "Ikan Gabus Goreng Sedang ⭐",
+    "harga": 185000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "sub_header": "IKAN GABUS",
+    "deskripsi": "Ikan gabus Sentani digoreng utuh atau potongan (maks 4 potong).",
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-gabus goreng (1).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-gabus goreng (2).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-gabus goreng (3).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-gabus goreng (4).jpeg"
+    ]
+  },
+  {
+    "id": 42,
+    "nama": "Sempe Sedang (4-8 Orang)",
+    "harga": 85000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Papeda panas dalam helay tanah liat khas Sentani.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sempe-sedang (1).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sempe-sedang (2).jpeg"
+    ]
+  },
+  {
+    "id": 64,
+    "nama": "Ikan Gabus Goreng Besar",
     "harga": 185000,
     "kategori": "Makanan",
     "sub": "Menu Satuan",
     "sub_header": "IKAN GABUS ⭐",
     "deskripsi": "Ikan gabus Sentani digoreng utuh atau potongan (maks 4 potong).",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-gabus goreng (1).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-gabus goreng (2).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-gabus goreng (3).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-gabus goreng (4).jpeg"
     ]
   },
   {
-    "id": 45,
+    "id": 40,
     "nama": "Ikan Gabus Kuah Bening (Besar)",
     "harga": 235000,
     "kategori": "Makanan",
@@ -712,7 +769,7 @@
     ]
   },
   {
-    "id": 37,
+    "id":41,
     "nama": "Sempe Kecil (2-3 Orang)",
     "harga": 45000,
     "kategori": "Makanan",
@@ -725,19 +782,7 @@
     ]
   },
   {
-    "id": 38,
-    "nama": "Sempe Sedang (4-8 Orang)",
-    "harga": 85000,
-    "kategori": "Makanan",
-    "sub": "Menu Satuan",
-    "deskripsi": "Papeda panas dalam helay tanah liat khas Sentani.",
-    "gambar": [
-      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sempe-sedang (1).jpeg",
-      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sempe-sedang (2).jpeg"
-    ]
-  },
-  {
-    "id": 39,
+    "id": 43,
     "nama": "Sempe Besar (Hingga 30 Orang)",
     "harga": 185000,
     "kategori": "Makanan",
@@ -749,7 +794,7 @@
     ]
   },
   {
-    "id": 34,
+    "id": 44,
     "nama": "Sayur Tumis",
     "harga": 30000,
     "kategori": "Makanan",
@@ -763,7 +808,7 @@
     ]
   },
   {
-    "id": 35,
+    "id": 45,
     "nama": "Sayur Genemo Lilin Santan",
     "harga": 40000,
     "kategori": "Makanan",
@@ -776,7 +821,7 @@
     ]
   },
   {
-    "id": 47,
+    "id": 46,
     "nama": "Kukusan Ubi & Keladi",
     "harga": 25000,
     "kategori": "Makanan",
@@ -791,7 +836,7 @@
     ]
   },
   {
-    "id": 36,
+    "id": 47,
     "nama": "Papeda Bungkus (Finukhu)",
     "harga": 35000,
     "kategori": "Makanan",
@@ -804,7 +849,7 @@
     ]
   },
   {
-    "id": 40,
+    "id": 48,
     "nama": "Paket Kenyang Isasai",
     "harga": 95000,
     "kategori": "Makanan",
@@ -817,21 +862,20 @@
     ]
   },
   {
-    "id": 46,
-    "nama": "Ayam Asap Utuh ⭐",
+    "id": 49,
+    "nama": "Ayam Asap Utuh Saos ⭐",
     "harga": 155000,
     "kategori": "Makanan",
     "sub": "Menu Satuan",
     "sub_header": "AYAM ASAP ⭐",
     "deskripsi": "Ayam asap 1 hari penuh, aroma smokey. Bisa dengan aneka sambal atau saos tomat rempah.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ayam-asap-utuh (1).png",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ayam-asap-utuh (2).png"
     ]
   },
   {
-    "id": 48,
+    "id": 50,
     "nama": "Dadar Sagu (Ou Afelea / Sinole)",
     "harga": 25000,
     "kategori": "Snack",
@@ -857,7 +901,7 @@
     ]
   },
   {
-    "id": 49,
+    "id": 52,
     "nama": "Singkong Goreng",
     "harga": 30000,
     "kategori": "Snack",
@@ -869,7 +913,7 @@
     ]
   },
   {
-    "id": 50,
+    "id": 53,
     "nama": "Kentang Goreng",
     "harga": 30000,
     "kategori": "Snack",
@@ -881,7 +925,7 @@
     ]
   },
   {
-    "id": 52,
+    "id": 54,
     "nama": "Pisang Goreng",
     "harga": 25000,
     "kategori": "Snack",
@@ -894,7 +938,7 @@
     ]
   },
   {
-    "id": 63,
+    "id": 55,
     "nama": "Snack Plate Campuran",
     "harga": 25000,
     "kategori": "Snack",
@@ -909,7 +953,7 @@
     ]
   },
   {
-    "id": 64,
+    "id": 56,
     "nama": "Snack Plate Ou Afelea / Sinole",
     "harga": 25000,
     "kategori": "Snack",
@@ -923,7 +967,7 @@
     ]
   },
   {
-    "id": 54,
+    "id": 57,
     "nama": "Nasi Putih",
     "harga": 10000,
     "kategori": "Extra",
@@ -934,7 +978,7 @@
     ]
   },
   {
-    "id": 55,
+    "id": 58,
     "nama": "Extra Sambal",
     "harga": 5000,
     "kategori": "Extra",
@@ -945,7 +989,7 @@
     ]
   },
   {
-    "id": 56,
+    "id": 59,
     "nama": "Extra Nipis",
     "harga": 5000,
     "kategori": "Extra",
@@ -956,7 +1000,7 @@
     ]
   },
   {
-    "id": 57,
+    "id": 60,
     "nama": "Extra Kelapa",
     "harga": 5000,
     "kategori": "Extra",
@@ -967,7 +1011,7 @@
     ]
   },
   {
-    "id": 58,
+    "id": 61,
     "nama": "Extra Kuah Asam",
     "harga": 10000,
     "kategori": "Extra",
@@ -978,7 +1022,7 @@
     ]
   },
   {
-    "id": 59,
+    "id": 62,
     "nama": "Extra Shot of Espresso",
     "harga": 15000,
     "kategori": "Extra",
@@ -989,7 +1033,7 @@
     ]
   },
   {
-    "id": 59,
+    "id": 63,
     "nama": "Air Mineral 500ML",
     "harga": 15000,
     "kategori": "Extra",
