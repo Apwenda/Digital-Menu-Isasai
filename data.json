@@ -634,9 +634,15 @@
     "sub": "Menu Satuan",
     "deskripsi": "Ikan mujair dalam kuah rempah ringan menyegarkan. Utuh atau potongan.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-mujair-kuah-kuning (1).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-mujair-kuah-kuning (2).jpeg"
+    ],
+    "items": [
+      {
+        "name": "Pilih Olahan",
+        "qty": "1 Porsi",
+        "options": ["Kuah Kuning", "Kuah Bening"]
+      }
     ]
   },
   {
@@ -674,9 +680,8 @@
     "sub_header": "PAPEDA SEMPE (PAPEDA PANAS)",
     "deskripsi": "Papeda panas dalam helay tanah liat khas Sentani.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sempe-kecil.jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sempe-kecil.png"
     ]
   },
   {
@@ -687,9 +692,8 @@
     "sub": "Menu Satuan",
     "deskripsi": "Papeda panas dalam helay tanah liat khas Sentani.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sempe-sedang (1).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Sempe-sedang (2).jpeg"
     ]
   },
   {

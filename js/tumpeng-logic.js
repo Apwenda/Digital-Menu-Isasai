@@ -5,9 +5,9 @@ const tumpengData = {
         { name: "Bete (Putih)", color: "#ede6e2" },
         { name: "Ubi Kuning (Kuning)", color: "#FFCC00" },
         { name: "Ubi Madu (Kuning)", color: "#FFCC00" },
-        { name: "Ubi Ungu", color: "#6A0DAD" },
         { name: "Pisang (Kuning)", color: "#F4D03F" },
-        { name: "Singkong (Kuning)", color: "#FEFAE0" }
+        { name: "Singkong (Kuning)", color: "#FEFAE0" },
+        { name: "Ubi Ungu", color: "#6A0DAD" }
     ],
     karbo: ["Ou Afelea/Sinole", "Jagung", "Suamening/Swotpun(Gedi Gulung)", "Ubi Ungu", "Ubi Kuning", "Pisang", "Keladi", "Papeda Bungkus"],
     lauk: ["Ayam Bakar","Ayam Goreng", "Ayam Bumbu Kuning","Ayam Kecap", "Ikan Tuna Saos", "Ikan Goreng", "IKan Asar Suir", "Sate Ayam", "Sate Ikan Tuna"],
@@ -254,7 +254,10 @@ function updateCheckout() {
     btn.innerHTML = `<i class="bi bi-whatsapp me-2"></i>Kirim Pesanan (Rp ${total.toLocaleString()})`;
 }
 
-function checkoutTumpengWA() {
+/* ===============================
+    CHECKOUT WHATSAPP (PERMINTAAN USER)
+================================ */
+function checkoutHampersWA() {
     const name = document.getElementById('cust-name').value.trim();
     const phone = document.getElementById('cust-phone').value.trim();
     const addr = document.getElementById('cust-address').value.trim();
@@ -267,22 +270,38 @@ function checkoutTumpengWA() {
         return;
     }
 
-    const total = cartTumpeng.reduce((s, i) => s + (i.harga * i.qty), 0);
-    const dpAmount = total * 0.5; // Hitung 50%
+    const total = cartHampers.reduce((s, i) => s + (i.harga * i.qty), 0);
+    const dpAmount = total * 0.5; // DP 50%
 
-    let msg = "*PESANAN TUMPENG ISASAI*\n\n";
-    msg += `*Data Pelanggan:*\n👤 Nama: ${name}\n📞 HP: ${phone}\n📍 Alamat: ${addr}\n🔗 Maps: ${maps || '-'}\n💳 Pembayaran: ${payment}\n\n`;
+    let msg = "*👋Hallo ISASAI R & V. PESANAN TUMPENG ISASAI*\n\n";
+
+    msg += `*Data Pelanggan:*\n`;
+    msg += `👤 Nama: ${name}\n`;
+    msg += `📞 HP: ${phone}\n`;
+    msg += `📍 Alamat: ${addr}\n`;
+    msg += `🔗 Maps: ${maps || '-'}\n`;
+    msg += `💳 Pembayaran: ${payment}\n\n`;
 
     msg += `*Detail Pesanan:*\n`;
-    cartTumpeng.forEach((it, i) => {
-        msg += `*${i+1}. Tumpeng (x${it.qty})*\n- Warna: ${it.lapisan}\n- Karbo: ${it.karbo}\n- Lauk: ${it.lauk}\n- Sayur: ${it.sayur}\n- Note: ${it.note}\n\n`;
+    cartHampers.forEach((it, i) => {
+        msg += `*${i+1}. Hampers (x${it.qty})*\n`;
+        msg += `- Karbo: ${it.karbo}\n`;
+        msg += `- Lauk: ${it.lauk}\n`;
+        msg += `- Sayur: ${it.sayur}\n`;
+        msg += `- Note: ${it.note}\n\n`;
     });
 
     msg += `--------------------------\n`;
-    msg += `*Total Bayar: Rp ${total.toLocaleString()}*\n`;
-    msg += `*Wajib DP (50%): Rp ${dpAmount.toLocaleString()}*\n`;
+    msg += `*Total Pesanan: Rp ${total.toLocaleString()}*\n`;
+    msg += `*DP Wajib (50%): Rp ${dpAmount.toLocaleString()}*\n`;
     msg += `--------------------------\n\n`;
-    msg += `_Mohon tunggu konfirmasi admin untuk instruksi pembayaran via ${payment}._`;
 
+    msg += `⚠️ *PENTING*\n`;
+    msg += `Sebelum pesanan diposes kami ingin DP 50% dibayarkan.\n`;
+    msg += `Tanpa DP, pesanan tidak masuk antrian produksi.\n\n`;
+
+    msg += `_Mohon konfirmasi admin untuk instruksi pembayaran via ${payment}. selanjutnya_ 🙏`;
+
+    // Kirim ke nomor WhatsApp yang diminta
     window.open(`https://wa.me/628114814415?text=${encodeURIComponent(msg)}`);
 }
