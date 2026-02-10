@@ -650,9 +650,20 @@
     "sub": "Menu Satuan",
     "deskripsi": "Ikan mujair goreng utuh atau potongan (maks 3 bagian).",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Mujair-goreng(1).png",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Mujair-goreng(2).png"
+    ]
+  },
+  {
+    "id": 65,
+    "nama": "Ikan Mujair Bakar",
+    "harga": 135000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Ikan mujair goreng utuh atau potongan (maks 3 bagian).",
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Mujair-bakar(1).png",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Mujair-bakar(2).png"
     ]
   },
   {
