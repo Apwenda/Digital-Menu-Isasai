@@ -329,8 +329,8 @@
     "sub_header": "Teh Herbal Papua",
     "deskripsi": "Rebusan jahe segar, daun salam, dan sereh dengan nipis dan gula seimbang. Gula putih dapat diganti gula merah sesuai permintaan.",
     "gambar": [
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh Herbal daun salam jahe.PNG",
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh Herbal daun salam jahe1.png"
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh Herbal daun salam jahe (1).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh Herbal daun salam jahe (2).png"
     ]
   },
   {
@@ -341,7 +341,8 @@
     "sub": "Teh Herbal Papua",
     "deskripsi": "Rebusan kayu masohi dan daun pandan dengan nipis dan gula merah, menghadirkan rasa khas dan hangat.",
     "gambar": [
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-kayu-masohi.PNG"
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-masohi(1).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-masohi(2).png"
     ]
   },
   {
@@ -352,8 +353,9 @@
     "sub": "Teh Herbal Papua",
     "deskripsi": "Teh dari pegunungan Arfak Papua Barat, rebusan kayu akway dan jahe dengan nipis dan gula.",
     "gambar": [
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-akway-jahe.PNG",
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-akway-jahe-dks.PNG"
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-kayu-akway (1).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-kayu-akway (2).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-kayu-akway (3).PNG"
     ]
   },
   {
@@ -364,7 +366,8 @@
     "sub": "Teh Herbal Papua",
     "deskripsi": "Rebusan sereh dan cengkeh tanpa gula. Membantu melancarkan pencernaan dan kaya antioksidan.",
     "gambar": [
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-cengkeh.PNG"
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-cengkeh(1).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-cengkeh(2).png"
     ]
   },
   {
@@ -375,7 +378,8 @@
     "sub": "Teh Herbal Papua",
     "deskripsi": "Teh dari pegunungan Papua, daun tradisional bumbu bakar batu yang menambah nafsu makan.",
     "gambar": [
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-libongga.PNG"
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-libongga(1).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-libongga(2).png"
     ]
   },
   {
@@ -386,8 +390,8 @@
     "sub": "Teh Herbal Papua",
     "deskripsi": "Rebusan rumput kebar dari Tambrauw. Membantu kesuburan, melancarkan haid, dan menyeimbangkan hormon.",
     "gambar": [
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-rumbut-kebar.png",
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-rumbut-kebar1.png"
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-rumbut-kebar(1).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-rumbut-kebar(2).png"
     ]
   },
   {
@@ -398,7 +402,8 @@
     "sub": "Teh Herbal Papua",
     "deskripsi": "Rebusan daun mint mexico (daun tebal) disajikan dengan campuran jeruk nipis dan gula.",
     "gambar": [
-      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-meksiko.PNG"
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-maxiko(1).png",
+      "assets/images/Menu-Isasai/Minuman/Teh/Teh-herbal-papua/Teh-maxiko(2).png"
     ]
   },
   {
@@ -533,9 +538,17 @@
     "sub": "Special",
     "deskripsi": "Espresso dengan susu almond, rasa kopi kuat dengan sentuhan susu ringan.",
     "gambar": [
-      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte (1).jpg",
-      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte (2).jpg",
-      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte (3).jpg"
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB(1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB(2).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB-panas(1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB-panas(2).jpg"
+    ],
+    "items": [
+      {
+        "name": "Hot/Cold",
+        "qty": "1 Gelas",
+        "options": ["Hot", "Cold"]
+      }
     ]
   },
   {
@@ -546,9 +559,17 @@
     "sub": "Special",
     "deskripsi": "Espresso dengan susu hazelnut, beraroma kacang dengan rasa kopi dominan.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB(1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB(2).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB-panas(1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB-panas(2).jpg"
+    ],
+    "items": [
+      {
+        "name": "Hot/Cold",
+        "qty": "1 Gelas",
+        "options": ["Hot", "Cold"]
+      }
     ]
   },
   {
@@ -581,9 +602,17 @@
     "sub": "Special",
     "deskripsi": "Espresso dengan susu dan perasa salted caramel, keseimbangan kopi kuat dan manis-gurih.",
     "gambar": [
-      "assets/menupaket.png",
-      "assets/menupaket.png",
-      "assets/menu paket.png"
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB(1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB(2).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB-panas(1).jpg",
+      "assets/images/Menu-Isasai/Minuman/Special/Almond-latte-MB-panas(2).jpg"
+    ],
+    "items": [
+      {
+        "name": "Hot/Cold",
+        "qty": "1 Gelas",
+        "options": ["Hot", "Cold"]
+      }
     ]
   },
   {
