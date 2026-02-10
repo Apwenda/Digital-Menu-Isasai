@@ -123,7 +123,7 @@
   },
   {
     "id": 5,
-    "nama": "Paket Makan Waena _Berempat_()",
+    "nama": "Paket Makan Waena _Berempat_(1)",
     "harga": 625000,
     "deskripsi": "Paket Makan Waena menyajikan papeda hangat, umbi lokal, dan olahan ikan khas Papua dengan cita rasa autentik.",
     "kategori": "Makanan",
@@ -139,19 +139,15 @@
       { "name": "Papeda bungkus", "qty": "3 porsi" },
       { "name": "Keladi tumbuk/campuran ubi", "qty": "1 porsi" },
       { "name": "Pisang asli rebus", "qty": "1 porsi" },
-      {
-        "name": "Ikan Mujair (Pilih Olahan)",
-        "qty": "4-6 potong",
-        "options": ["Mujair Kuah Bening", "Mujair Kuah Kuning"]
-      },
-      { "name": "Ikan Gabus saos", "qty": "4-6 potong" },
+      { "name": "Ikan Mujair Saos", "qty": "4-6 potong" },
+      { "name": "Ikan Gabus Asar Santan", "qty": "4-6 potong" },
       { "name": "Sayur tumis", "qty": "1 porsi" },
       { "name": "Sayur genemo lilin santan", "qty": "1 porsi" },
       { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
     ]
   },
   {
-    "id": 5,
+    "id": 64,
     "nama": "Paket Makan Waena _Berempat_(2)",
     "harga": 625000,
     "deskripsi": "Paket Makan Waena menyajikan papeda hangat, umbi lokal, dan olahan ikan khas Papua dengan cita rasa autentik.",
@@ -200,9 +196,37 @@
       {
         "name": "Ikan Mujair Asar (Pilih Olahan)",
         "qty": "4-6 potong",
-        "options": ["Asar Saos", "Asar Goreng Santan"]
+        "options": ["Asar Saos", "Asar Kuah Santan"]
       },
       { "name": "Ikan Gabus kuah bening", "qty": "4-6 potong" },
+      { "name": "Sayur tumis", "qty": "1 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "1 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 65,
+    "nama": "Paket Makan Waena _Berempat_(4)",
+    "harga": 625000,
+    "deskripsi": "Paket Makan Waena menyajikan papeda hangat, umbi lokal, sayur, serta olahan ikan asar dan kuah bening khas.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (5).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (7).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).jpg"
+    ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
+      { "name": "Papeda bungkus", "qty": "3 porsi" },
+      { "name": "Keladi tumbuk/campuran ubi", "qty": "1 porsi" },
+      { "name": "Pisang asli rebus", "qty": "1 porsi" },
+      {
+        "name": "Ikan Gabus (Pilih Olahan)",
+        "qty": "4-6 potong",
+        "options": ["Gabus Saos", "Gabus Kuah Bening","Gabus Kuah Kuning"]
+      },
       { "name": "Sayur tumis", "qty": "1 porsi" },
       { "name": "Sayur genemo lilin santan", "qty": "1 porsi" },
       { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
