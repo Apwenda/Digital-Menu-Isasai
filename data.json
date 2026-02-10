@@ -207,7 +207,7 @@
   {
     "id": 65,
     "nama": "Paket Makan Waena _Berempat_(4)",
-    "harga": 625000,
+    "harga": 725000,
     "deskripsi": "Paket Makan Waena menyajikan papeda hangat, umbi lokal, sayur, serta olahan ikan asar dan kuah bening khas.",
     "kategori": "Makanan",
     "sub": "Paket/Combo",
@@ -235,7 +235,7 @@
   {
     "id": 7,
     "nama": "Jus Alpukat",
-    "harga": 30000,
+    "harga": 40000,
     "kategori": "Minuman",
     "sub": "Jus",
     "sub_header": "Jus Buah Segar",
@@ -286,7 +286,7 @@
   {
     "id": 11,
     "nama": "Jus Mangga",
-    "harga": 32000,
+    "harga": 40000,
     "kategori": "Minuman",
     "sub": "Jus",
     "deskripsi": "Jus mangga segar dengan rasa manis alami.",
@@ -375,8 +375,8 @@
   },
   {
     "id": 17,
-    "nama": "Teh Herbal Daun Salam Jahe ⭐",
-    "harga": 26000,
+    "nama": "Teh Herbal Daun Salam Jahe",
+    "harga": 30000,
     "kategori": "Teh",
     "sub": "Teh Herbal Papua",
     "sub_header": "Teh Herbal Papua",
@@ -388,7 +388,7 @@
   },
   {
     "id": 18,
-    "nama": "Teh Kayu Masohi ⭐",
+    "nama": "Teh Kayu Masohi",
     "harga": 37000,
     "kategori": "Teh",
     "sub": "Teh Herbal Papua",
@@ -414,7 +414,7 @@
   {
     "id": 20,
     "nama": "Teh Sereh Cengkeh",
-    "harga": 20000,
+    "harga": 30000,
     "kategori": "Teh",
     "sub": "Teh Herbal Papua",
     "deskripsi": "Rebusan sereh dan cengkeh tanpa gula. Membantu melancarkan pencernaan dan kaya antioksidan.",
@@ -708,9 +708,33 @@
     ]
   },
   {
+    "id": 66,
+    "nama": "Ikan Mujair Goreng Besar",
+    "harga": 155000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Ikan mujair goreng utuh atau potongan (maks 3 bagian).",
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Mujair-goreng(1).png",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Mujair-goreng(2).png"
+    ]
+  },
+  {
     "id": 65,
-    "nama": "Ikan Mujair Bakar",
+    "nama": "Ikan Mujair Bakar Sedang",
     "harga": 135000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Ikan mujair goreng utuh atau potongan (maks 3 bagian).",
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Mujair-bakar(1).png",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Mujair-bakar(2).png"
+    ]
+  },
+  {
+    "id": 67,
+    "nama": "Ikan Mujair Bakar Besar",
+    "harga": 155000,
     "kategori": "Makanan",
     "sub": "Menu Satuan",
     "deskripsi": "Ikan mujair goreng utuh atau potongan (maks 3 bagian).",
@@ -723,6 +747,25 @@
     "id": 38,
     "nama": "Ikan Mujair Kuah Bening/Kuning Besar",
     "harga": 155000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "deskripsi": "Ikan mujair dalam kuah rempah ringan menyegarkan. Utuh atau potongan.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-mujair-kuah-kuning (1).jpeg",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-mujair-kuah-kuning (2).jpeg"
+    ],
+    "items": [
+      {
+        "name": "Pilih Olahan",
+        "qty": "1 Porsi",
+        "options": ["Kuah Kuning", "Kuah Bening"]
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "nama": "Ikan Mujair Kuah Bening/Kuning Sedang",
+    "harga": 135000,
     "kategori": "Makanan",
     "sub": "Menu Satuan",
     "deskripsi": "Ikan mujair dalam kuah rempah ringan menyegarkan. Utuh atau potongan.",
@@ -754,6 +797,19 @@
     ]
   },
   {
+    "id": 70,
+    "nama": "Ikan Gabus Kuah Hitam",
+    "harga": 475000,
+    "kategori": "Makanan",
+    "sub": "Menu Satuan",
+    "sub_header": "IKAN GABUS",
+    "deskripsi": "Ikan gabus Sentani kuah hitam utuh atau potongan (maks 4 potong).",
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-kuah-hitam-gabus (1).JPG",
+      "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ikan-kuah-hitam-gabus (2).JPG"
+    ]
+  },
+  {
     "id": 42,
     "nama": "Sempe Sedang (4-8 Orang)",
     "harga": 85000,
@@ -768,7 +824,7 @@
   {
     "id": 64,
     "nama": "Ikan Gabus Goreng Besar",
-    "harga": 185000,
+    "harga": 235000,
     "kategori": "Makanan",
     "sub": "Menu Satuan",
     "sub_header": "IKAN GABUS ⭐",
@@ -887,11 +943,11 @@
   },
   {
     "id": 49,
-    "nama": "Ayam Asap Utuh Saos ⭐",
+    "nama": "Ayam Asap Utuh Saos",
     "harga": 155000,
     "kategori": "Makanan",
     "sub": "Menu Satuan",
-    "sub_header": "AYAM ASAP ⭐",
+    "sub_header": "AYAM ASAP",
     "deskripsi": "Ayam asap 1 hari penuh, aroma smokey. Bisa dengan aneka sambal atau saos tomat rempah.",
     "gambar": [
       "assets/images/Menu-Isasai/Makanan/Menu-satuan/Ayam-asap-utuh (1).png",
@@ -927,7 +983,7 @@
   {
     "id": 52,
     "nama": "Singkong Goreng",
-    "harga": 30000,
+    "harga": 25000,
     "kategori": "Snack",
     "sub":"Snack Pangan Lokal",
     "deskripsi": "Singkong direbus lalu digoreng hingga renyah, disajikan dengan sambal goreng.",
@@ -963,8 +1019,8 @@
   },
   {
     "id": 55,
-    "nama": "Snack Plate Campuran",
-    "harga": 25000,
+    "nama": "Snack Plate - (talam Ubi unggu, talam jagung, talam labu, keladi & ubi unggu tumbuk, sinole)",
+    "harga": 100000,
     "kategori": "Snack",
     "sub":"Snack Plate Isasai",
     "deskripsi": "Pisang digoreng harum dan keemasan, disajikan dengan sambal goreng.",
@@ -979,7 +1035,7 @@
   {
     "id": 56,
     "nama": "Snack Plate Ou Afelea / Sinole",
-    "harga": 25000,
+    "harga": 125000,
     "kategori": "Snack",
     "sub":"Snack Plate Isasai",
     "deskripsi": "Pisang digoreng harum dan keemasan, disajikan dengan sambal goreng.",
@@ -993,7 +1049,18 @@
   {
     "id": 57,
     "nama": "Nasi Putih",
-    "harga": 10000,
+    "harga": 15000,
+    "kategori": "Extra",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+    ]
+  },
+  {
+    "id": 70,
+    "nama": "Nasi Satu Bakul (4 Porsi)",
+    "harga": 60000,
     "kategori": "Extra",
     "gambar": [
       "assets/menupaket.png",
@@ -1026,7 +1093,7 @@
   {
     "id": 60,
     "nama": "Extra Kelapa",
-    "harga": 5000,
+    "harga": 10000,
     "kategori": "Extra",
     "gambar": [
       "assets/menupaket.png",
@@ -1058,7 +1125,18 @@
   },
   {
     "id": 63,
-    "nama": "Air Mineral 500ML",
+    "nama": "Air Mineral 500 ML",
+    "harga": 10000,
+    "kategori": "Extra",
+    "gambar": [
+      "assets/menupaket.png",
+      "assets/menupaket.png",
+      "assets/menu paket.png"
+    ]
+  },
+  {
+    "id": 71,
+    "nama": "Air Mineral 1 ML",
     "harga": 15000,
     "kategori": "Extra",
     "gambar": [
