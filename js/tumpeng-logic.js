@@ -297,7 +297,7 @@ function checkoutHampersWA() {
     msg += `--------------------------\n\n`;
 
     msg += `⚠️ *PENTING*\n`;
-    msg += `Sebelum pesanan diposes kami ingin DP 50% dibayarkan.\n`;
+    msg += `Sebelum pesanan diposes kami ingin DP 50% dahulu.\n`;
     msg += `Tanpa DP, pesanan tidak masuk antrian produksi.\n\n`;
 
     msg += `_Mohon konfirmasi admin untuk instruksi pembayaran via ${payment}. selanjutnya_ 🙏`;

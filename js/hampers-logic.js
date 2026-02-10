@@ -263,7 +263,7 @@ function checkoutHampersWA() {
     msg += `--------------------------\n\n`;
 
     msg += `⚠️ *PENTING*\n`;
-    msg += `Sebelum pesanan diposes kami ingin DP 50% dibayarkan.\n\n`;
+    msg += `Sebelum pesanan diposes kami ingin DP 50% dahulu.\n\n`;
     msg += `_Mohon konfirmasi admin untuk instruksi pembayaran via ${payment}. selanjutnya_ 🙏`;
 
     // 3. Eksekusi Kirim ke WhatsApp (URL Encoded untuk menjaga emoji)

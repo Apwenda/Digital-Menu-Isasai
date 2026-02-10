@@ -854,6 +854,35 @@
     ]
   },
   {
+    "id": 63,
+    "nama": "Snack Plate Campuran",
+    "harga": 25000,
+    "kategori": "Snack",
+    "sub":"Snack Plate Isasai",
+    "deskripsi": "Pisang digoreng harum dan keemasan, disajikan dengan sambal goreng.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Snack/Snack-plate/Snack-plate-isasai (1).jpeg",
+      "assets/images/Menu-Isasai/Snack/Snack-plate/Snack-plate-isasai (2).jpeg",
+      "assets/images/Menu-Isasai/Snack/Snack-plate/Snack-plate-isasai (3).jpeg",
+      "assets/images/Menu-Isasai/Snack/Snack-plate/Snack-plate-isasai (4).jpeg",
+      "assets/images/Menu-Isasai/Snack/Snack-plate/Snack-plate-isasai (5).jpeg"
+    ]
+  },
+  {
+    "id": 64,
+    "nama": "Snack Plate Ou Afelea / Sinole",
+    "harga": 25000,
+    "kategori": "Snack",
+    "sub":"Snack Plate Isasai",
+    "deskripsi": "Pisang digoreng harum dan keemasan, disajikan dengan sambal goreng.",
+    "gambar": [
+      "assets/images/Menu-Isasai/Snack/Snack-plate/Snack-plate (1).png",
+      "assets/images/Menu-Isasai/Snack/Snack-plate/Snack-plate (2).png",
+      "assets/images/Menu-Isasai/Snack/Snack-plate/Snack-plate (3).png",
+      "assets/images/Menu-Isasai/Snack/Snack-plate/Snack-plate (4).png"
+    ]
+  },
+  {
     "id": 54,
     "nama": "Nasi Putih",
     "harga": 10000,

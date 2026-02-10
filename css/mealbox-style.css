@@ -1,12 +1,144 @@
-body { font-family: 'Montserrat', sans-serif; }
-.section-label { font-size: 0.75rem; color: #004225; letter-spacing: 1px; }
-.btn-outline-success { border-radius: 12px; font-weight: 600; border-width: 2px; }
-.cart-item-pro { border-left: 4px solid #198754; }
+/* Tambahkan/Update bagian ini di CSS Anda */
 
-/* FIX IMAGE ZOOM */
-.carousel-item img {
+body { font-family: 'Montserrat', sans-serif; }
+
+/* PROMO */
+#carouselPromo {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+}
+
+#carouselPromo .carousel-item img {
+    width: 100%;
+    height: auto;
+    /* aspect-ratio bisa dihapus jika ingin mengikuti ukuran asli gambar,
+       atau tetap gunakan jika ingin konsistensi tinggi frame */
     aspect-ratio: 16 / 9;
-    object-fit: contain !important;
+
+    /* UBAH DARI 'cover' KE 'contain' */
+    object-fit: contain;
+
+    /* Berikan background gelap atau netral agar area kosong di samping/atas
+       tidak terlihat janggal saat gambar tidak memenuhi frame 16:9 */
     background-color: #f8f9fa;
     border-radius: 16px;
 }
+
+.section-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: #004225;
+    margin-bottom: 12px;
+    display: block;
+    border-left: 4px solid #FF8C00;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.btn-cta-orange {
+    background: #FF8C00;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+.btn-cta-orange:hover { background: #e67e00; color: white; }
+.btn-cta-orange:disabled { background: #ccc; cursor: not-allowed; }
+
+/* KERANJANG */
+.cart-item-pro {
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #edf2f7;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+}
+
+.cart-header-pro {
+    padding: 12px 16px;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge-racikan {
+    font-size: 10px;
+    font-weight: 800;
+    background: #004225;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 50px;
+}
+
+.cart-body-pro { padding: 16px; }
+
+.detail-block { margin-bottom: 8px; }
+.detail-block .label {
+    font-size: 10px;
+    color: #718096;
+    font-weight: 600;
+    display: block;
+}
+.detail-block .value {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.note-box-pro {
+    font-size: 11px;
+    background: #fffaf0;
+    padding: 8px;
+    border-radius: 8px;
+    border-left: 3px solid #FF8C00;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.cart-footer-pro {
+    padding: 12px 16px;
+    border-top: 1px dashed #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mempercantik tombol +/- */
+.qty-control-pro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 10px;
+}
+.qty-control-pro button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: white;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.price-pro span {
+    font-weight: 800;
+    font-size: 16px;
+    color: #FF8C00;
+}
+
+.btn-delete-pro {
+    background-color: #ffeded;
+    border: none;
+    color: #dc3545;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.btn-delete-pro:hover { background-color: #dc3545; color: white; }
