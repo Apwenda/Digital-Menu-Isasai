@@ -23,8 +23,7 @@ const mealboxData = {
         "Ikan Tuna Bumbu Kuning",
         "Ikan Tuna Goreng Saos"
     ],
-    harga: 65000 // Harga per box sesuai permintaan
-
+    harga: 65000
 };
 
 const promoImagesMealbox = [
@@ -33,7 +32,9 @@ const promoImagesMealbox = [
     "assets/images/Menu-Isasai/Makanan/Mealbox-isasai/Mealbox (3).png"
 ];
 
-
+/* ===============================
+    STORAGE & INIT
+================================ */
 let cartMealbox = JSON.parse(localStorage.getItem('isasai_cart_mealbox')) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -46,6 +47,9 @@ function saveMealboxLocal() {
     localStorage.setItem('isasai_cart_mealbox', JSON.stringify(cartMealbox));
 }
 
+/* ===============================
+    RENDER FORM OPTIONS
+================================ */
 function renderOptionsMealbox() {
     const containers = {
         karbo: document.getElementById('karbo-container'),
@@ -57,7 +61,6 @@ function renderOptionsMealbox() {
     ['karbo', 'sayur', 'lauk'].forEach(type => {
         containers[type].innerHTML = '';
         mealboxData[type].forEach((val, i) => {
-            // Kita gunakan col-6 agar 2 pilihan per baris, sangat pas untuk daftar yang panjang
             containers[type].innerHTML += `
                 <div class="col-6">
                     <input type="radio" class="btn-check chk-${type}" name="${type}-radio" id="${type}-${i}" value="${val}" onchange="validateMealboxForm()">
@@ -77,6 +80,9 @@ function validateMealboxForm() {
     if(btn) btn.disabled = !(k && s && l);
 }
 
+/* ===============================
+    LOGIKA KERANJANG
+================================ */
 function addToMealboxCart() {
     const k = document.querySelector('.chk-karbo:checked').value;
     const s = document.querySelector('.chk-sayur:checked').value;
@@ -95,42 +101,72 @@ function addToMealboxCart() {
     renderCartMealbox();
     document.getElementById('mealbox-form').reset();
     validateMealboxForm();
+    document.getElementById('mealbox-cart-view').scrollIntoView({ behavior: 'smooth' });
+}
+
+/* ===============================
+    LOGIKA LAYANAN (DINE-IN / DELIVERY)
+================================ */
+function handleServiceSelection() {
+    const isDineIn = document.getElementById('type-dinein').checked;
+    const infoForm = document.getElementById('customer-info-form');
+    const deliveryFields = document.getElementById('delivery-fields');
+    const phoneContainer = document.getElementById('phone-container');
+    const dpAlert = document.getElementById('dp-alert');
+    const btnCheckout = document.getElementById('btn-checkout-wa');
+
+    if (infoForm) {
+        infoForm.classList.remove('d-none');
+        btnCheckout.style.display = 'block';
+
+        if (isDineIn) {
+            deliveryFields.classList.add('d-none');
+            dpAlert.classList.add('d-none');
+            if(phoneContainer) phoneContainer.classList.add('d-none');
+        } else {
+            deliveryFields.classList.remove('d-none');
+            dpAlert.classList.remove('d-none');
+            if(phoneContainer) phoneContainer.classList.remove('d-none');
+        }
+        infoForm.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
 function renderCartMealbox() {
     const cont = document.getElementById('mealbox-cart-items');
-    const info = document.getElementById('customer-info-form');
+    const serviceTypeCont = document.getElementById('service-type-container');
+    const infoForm = document.getElementById('customer-info-form');
     const addMore = document.getElementById('add-more-container');
 
     if (!cont) return;
 
     if (cartMealbox.length === 0) {
-        cont.innerHTML = `<div class="text-center p-5 bg-white rounded-4 border">Belum ada pesanan mealbox</div>`;
-        if(info) info.classList.add('d-none');
+        cont.innerHTML = `<div class="text-center p-5 bg-white rounded-4 border shadow-sm text-muted small">Belum ada pesanan mealbox</div>`;
+        if(serviceTypeCont) serviceTypeCont.classList.add('d-none');
+        if(infoForm) infoForm.classList.add('d-none');
         if(addMore) addMore.classList.add('d-none');
         updateMealboxCheckout();
         return;
     }
 
-    if(info) info.classList.remove('d-none');
+    if(serviceTypeCont) serviceTypeCont.classList.remove('d-none');
     if(addMore) addMore.classList.remove('d-none');
 
     cont.innerHTML = "";
     cartMealbox.forEach((item, i) => {
-        // RENDERING MENGGUNAKAN CLASS CSS BARU ANDA
         cont.innerHTML += `
-            <div class="cart-item-pro">
+            <div class="cart-item-pro mb-3 animate__animated animate__fadeInLeft">
                 <div class="cart-header-pro">
                     <span class="badge-racikan">RACIKAN MEALBOX #${i+1}</span>
                     <button class="btn-delete-pro" onclick="removeMealboxItem(${i})">
                         <i class="bi bi-trash3"></i>
                     </button>
                 </div>
-                <div class="cart-body-pro">
-                    <div class="detail-block"><span class="label">PILIHAN KARBO</span><span class="value">${item.karbo}</span></div>
-                    <div class="detail-block"><span class="label">PILIHAN SAYUR</span><span class="value">${item.sayur}</span></div>
-                    <div class="detail-block"><span class="label">LAUK UTAMA</span><span class="value">${item.lauk}</span></div>
-                    <div class="note-box-pro">Note: ${item.note}</div>
+                <div class="cart-body-pro text-start">
+                    <div class="detail-block"><span class="label">KARBO:</span> <span class="value">${item.karbo}</span></div>
+                    <div class="detail-block"><span class="label">SAYUR:</span> <span class="value">${item.sayur}</span></div>
+                    <div class="detail-block"><span class="label">LAUK:</span> <span class="value">${item.lauk}</span></div>
+                    <div class="note-box-pro mt-2">Note: ${item.note}</div>
                 </div>
                 <div class="cart-footer-pro">
                     <div class="qty-control-pro">
@@ -138,8 +174,8 @@ function renderCartMealbox() {
                         <span class="fw-bold px-2">${item.qty}</span>
                         <button onclick="updateMealboxQty(${i},1)">+</button>
                     </div>
-                    <div class="price-pro">
-                        <span>Rp ${(item.harga * item.qty).toLocaleString()}</span>
+                    <div class="price-pro text-success fw-bold">
+                        Rp ${(item.harga * item.qty).toLocaleString()}
                     </div>
                 </div>
             </div>`;
@@ -155,7 +191,7 @@ function updateMealboxQty(i, v) {
 }
 
 function removeMealboxItem(i) {
-    if(confirm("Hapus item ini?")) {
+    if(confirm("Hapus pesanan ini?")) {
         cartMealbox.splice(i,1);
         saveMealboxLocal();
         renderCartMealbox();
@@ -166,7 +202,6 @@ function updateMealboxCheckout() {
     const btn = document.getElementById('btn-checkout-wa');
     if(!btn) return;
     const total = cartMealbox.reduce((s, i) => s + (i.harga * i.qty), 0);
-    btn.style.display = cartMealbox.length > 0 ? 'block' : 'none';
     btn.innerHTML = `<i class="bi bi-whatsapp me-2"></i>Kirim Pesanan (Rp ${total.toLocaleString()})`;
 }
 
@@ -174,39 +209,75 @@ function scrollToForm() {
     document.getElementById('mealbox-form').scrollIntoView({ behavior: 'smooth' });
 }
 
+/* ===============================
+    CHECKOUT WHATSAPP
+================================ */
 function checkoutMealboxWA() {
+    const serviceNode = document.querySelector('input[name="service-type"]:checked');
+    if(!serviceNode) { alert("Pilih tipe layanan dulu!"); return; }
+
+    const serviceType = serviceNode.value;
     const name = document.getElementById('cust-name').value.trim();
     const phone = document.getElementById('cust-phone').value.trim();
+    const payment = document.getElementById('cust-payment').value;
     const addr = document.getElementById('cust-address').value.trim();
     const maps = document.getElementById('cust-maps').value.trim();
-    const payment = document.getElementById('cust-payment').value;
 
-    if(!name || !phone || !addr || !payment) {
-        alert("Mohon lengkapi Data Pelanggan!"); return;
+    if(!name || !payment) {
+        alert("Mohon lengkapi Nama dan Metode Pembayaran!"); return;
+    }
+
+    if(serviceType === "Delivery" && (!phone || !addr)) {
+        alert("Mohon lengkapi No. WhatsApp dan Alamat untuk pengiriman!"); return;
     }
 
     const total = cartMealbox.reduce((s, i) => s + (i.harga * i.qty), 0);
-    const dp = total * 0.5;
 
-    let msg = "*👋Hallo ISASAI R & V. PESANAN MEALBOX ISASAI*\n\n";
-    msg += `*Data Pelanggan:*\n👤 Nama: ${name}\n📞 HP: ${phone}\n📍 Alamat: ${addr}\n🔗 Maps: ${maps || '-'}\n💳 Pembayaran: ${payment}\n\n`;
+    let msg = `*👋Hallo ISASAI R & V. Pesanan Mealbox ${serviceType.toUpperCase()}*\n\n`;
+    msg += `👤 Nama: ${name}\n`;
 
+    if(serviceType === "Delivery") {
+        msg += `📞 HP: ${phone}\n`;
+        msg += `📍 Alamat: ${addr}\n`;
+        msg += `🔗 Maps: ${maps || '-'}\n`;
+    } else {
+        msg += `🍴 *Layanan: Makan di Tempat*\n`;
+    }
+
+    msg += `💳 Pembayaran: ${payment}\n\n`;
     msg += `*Detail Pesanan:*\n`;
+
     cartMealbox.forEach((it, i) => {
-        msg += `*${i+1}. Mealbox (x${it.qty})*\n- Karbo: ${it.karbo}\n- Lauk: ${it.lauk}\n- Sayur: ${it.sayur}\n- Note: ${it.note}\n\n`;
+        msg += `*${i+1}. Mealbox (x${it.qty})*\n- ${it.karbo}, ${it.lauk}, ${it.sayur}\n- Note: ${it.note}\n\n`;
     });
 
     msg += `--------------------------\n`;
-    msg += `*Total Pesanan: Rp ${total.toLocaleString()}*\n`;
-    msg += `*Kami Ingin DP (50%): Rp ${dp.toLocaleString()}*\n`;
-    msg += `--------------------------\n\n`;
-    msg += `⚠️ *PENTING*\nSebelum pesanan diposes kami ingin DP 50% dahulu.\n\n`;
-    msg += `_Mohon konfirmasi admin untuk instruksi pembayaran via ${payment}. selanjutnya_ 🙏`;
+    msg += `*Total: Rp ${total.toLocaleString()}*\n`;
 
-    window.open(`https://wa.me/628114814415?text=${encodeURIComponent(msg)}`, "_blank");
+    if(serviceType === "Delivery") {
+        msg += `*DP (50%): Rp ${(total * 0.5).toLocaleString()}*\n`;
+        msg += `--------------------------\n`;
+        if(payment.toLowerCase().includes("tunai") || payment.toLowerCase().includes("cash")) {
+            msg += `⚠️ Pesanan *Jarak Jauh* via *Tunai*. Mohon instruksi admin untuk pembayaran DP agar pesanan bisa diproses.\n\n`;
+        } else {
+            msg += `⚠️ Kami akan segera transfer DP, mohon kirimkan instruksi pembayaran via *${payment}* agar pesanan segera diproses.\n\n`;
+        }
+    } else {
+        msg += `--------------------------\n`;
+    }
+
+    msg += `Terima Kasih, ISASAI ~ R & V.`;
+
+    const adminPhone = "628114814415";
+    window.open(`https://wa.me/${adminPhone}?text=${encodeURIComponent(msg)}`, "_blank");
+
+    // Reset keranjang & UI
     localStorage.removeItem('isasai_cart_mealbox');
     cartMealbox = [];
-    setTimeout(() => { window.location.reload(); }, 800);
+    setTimeout(() => {
+        alert("Pesanan Mealbox terkirim!");
+        window.location.reload();
+    }, 1000);
 }
 
 function renderPromoMealbox() {

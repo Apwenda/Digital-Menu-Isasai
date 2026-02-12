@@ -22,12 +22,44 @@ body {
     padding: 12px 0;
 }
 
+/* warna default item dropdown */
+.dropdown-menu .dropdown-item {
+    color: #212529;
+}
+
+/* saat hover */
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+    color: var(--isasai-orange);
+}
+
+/* saat diklik */
+.dropdown-menu .dropdown-item:active {
+    background-color: transparent;
+    color: var(--isasai-orange);
+}
+
+/* saat focus (mobile / keyboard) */
+.dropdown-menu .dropdown-item:focus {
+    background-color: transparent;
+    color: var(--isasai-orange);
+}
+
+/* hilangkan efek biru highlight bootstrap */
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: transparent !important;
+}
+
+
 .navbar-brand {
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     color: var(--isasai-yellow) !important;
     letter-spacing: 1px;
 }
+
+
 .hero-hidden {
     display: none !important;
 }

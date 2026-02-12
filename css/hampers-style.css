@@ -44,6 +44,66 @@ body { font-family: 'Montserrat', sans-serif; }
 .btn-cta-orange:hover { background: #e67e00; color: white; }
 .btn-cta-orange:disabled { background: #ccc; cursor: not-allowed; }
 
+/* --- UI Tipe Layanan Modern --- */
+#service-type-container {
+    background: #fdfdfd;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Sembunyikan radio default */
+.btn-check:checked + .service-card {
+    border-color: #004225 !important;
+    background-color: #f0fdf4 !important;
+    box-shadow: 0 4px 12px rgba(0, 66, 37, 0.1);
+}
+
+.service-card {
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    padding: 15px 10px !important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.service-card i {
+    font-size: 24px;
+    color: #64748b;
+    transition: all 0.3s ease;
+}
+
+.btn-check:checked + .service-card i {
+    color: #004225;
+    transform: scale(1.1);
+}
+
+.service-card span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #475569;
+}
+
+.btn-check:checked + .service-card span {
+    color: #004225;
+}
+
+/* Animasi sederhana saat muncul */
+.animate__fadeIn {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* KERANJANG */
 .cart-item-pro {
     background: #ffffff;

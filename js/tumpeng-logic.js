@@ -1,3 +1,6 @@
+/* ===============================
+    DATA TUMPENG ISASAI
+================================ */
 const tumpengData = {
     lapisan: [
         { name: "Keladi(Putih)", color: "#ede6e2" },
@@ -11,35 +14,17 @@ const tumpengData = {
     ],
     karbo: ["Ou Afelea/Sinole", "Jagung", "Suamening/Swotpun(Gedi Gulung)", "Ubi Ungu", "Ubi Kuning", "Pisang", "Keladi", "Papeda Bungkus"],
     lauk: ["Ayam Bakar","Ayam Goreng", "Ayam Bumbu Kuning","Ayam Kecap", "Ikan Tuna Saos", "Ikan Goreng", "IKan Asar Suir", "Sate Ayam", "Sate Ikan Tuna"],
-    sayur: ["Kacang Bunga Pepaya", "Tumis Bunga Pepaya", "Kangkung Bunga Pepaya", "Kangkung Tumis", "Daun Singkong", "Daun Ubi + Daun Pepaya", "Tumis Daun Labu", "Tumis Daun Pakis"]
+    sayur: ["Kacang Bunga Pepaya", "Tumis Bunga Pepaya", "Kangkung Bunga Pepaya", "Kangkung Tumis", "Daun Singkong", "Daun Ubi + Daun Pepaya", "Tumis Daun Labu", "Tumis Daun Pakis"],
+    harga: 750000
 };
 
 const promoImages = [
     "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (1).jpg",
     "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (2).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (3).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (4).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (5).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (6).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (7).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (8).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (9).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (10).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (11).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (12).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (13).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (14).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (15).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (16).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (17).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (18).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (19).jpg",
-    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (20).jpg",
-
+    "assets/images/Menu-Isasai/Tumpeng-pangan-lokal/TPL  (3).jpg"
 ];
-// Load data dari Local Storage atau buat array kosong
+
 let cartTumpeng = JSON.parse(localStorage.getItem('isasai_cart_tumpeng')) || [];
-let currentRandom = [];
 
 document.addEventListener('DOMContentLoaded', () => {
     renderPromo();
@@ -51,37 +36,20 @@ function saveToLocal() {
     localStorage.setItem('isasai_cart_tumpeng', JSON.stringify(cartTumpeng));
 }
 
-function renderPromo() {
-    const inner = document.getElementById('carousel-inner-promo');
-    const ind = document.getElementById('carousel-indicators');
-    if(!inner || !ind) return;
-
-    inner.innerHTML = "";
-    ind.innerHTML = "";
-
-    promoImages.forEach((img, i) => {
-        inner.innerHTML += `
-            <div class="carousel-item ${i === 0 ? 'active' : ''}">
-                <img src="${img}" class="d-block w-100" alt="Promo Isasai">
-            </div>`;
-
-        ind.innerHTML += `
-            <button type="button" data-bs-target="#carouselPromo" data-bs-slide-to="${i}"
-                class="${i === 0 ? 'active' : ''}" aria-label="Slide ${i + 1}">
-            </button>`;
-    });
-}
-
+/* ===============================
+    LOGIKA FORM & RENDER
+================================ */
 function renderOptions() {
     const lpC = document.getElementById('lapisan-container');
-    // Lapisan diubah jadi Radio Button (Hanya bisa pilih 1)
+    if(!lpC) return;
+
     tumpengData.lapisan.forEach(item => {
         lpC.innerHTML += `
-            <div class="col-4 text-center">
+            <div class="col-4 text-center mb-3">
                 <input type="radio" class="btn-check chk-lp" name="lapisan-radio" id="lp-${item.name}" value="${item.name}" onchange="validateForm()">
-                <label class="btn border-0 w-100 p-1" for="lp-${item.name}">
-                    <div class="color-circle" style="background:${item.color}"></div>
-                    <div style="font-size:10px; font-weight:700;">${item.name}</div>
+                <label class="btn p-2 w-100 h-100 rounded-3 color-option-label" for="lp-${item.name}">
+                    <div class="color-circle shadow-sm" style="background:${item.color}; width:45px; height:45px; border-radius:50%; margin:0 auto 8px; border:3px solid white;"></div>
+                    <div style="font-size:10px; font-weight:700; line-height:1.2; color:#333;">${item.name}</div>
                 </label>
             </div>`;
     });
@@ -92,7 +60,7 @@ function renderOptions() {
             cont.innerHTML += `
                 <div class="col-6">
                     <input type="checkbox" class="btn-check ${cls}" id="${id}-${val}" value="${val}" onchange="checkLimit(this, '.${cls}', ${limit})">
-                    <label class="btn btn-outline-success btn-sm w-100 text-start" for="${id}-${val}">${val}</label>
+                    <label class="btn btn-outline-success btn-sm w-100 text-start py-2 mb-2" style="font-size:11px;" for="${id}-${val}">${val}</label>
                 </div>`;
         });
     };
@@ -105,32 +73,38 @@ function renderOptions() {
 function checkLimit(el, selector, max) {
     if (document.querySelectorAll(`${selector}:checked`).length > max) {
         el.checked = false;
-        alert(`Maksimal pilih ${max} Menu.`);
+        alert(`Untuk kategori ini, maksimal pilih ${max} Menu.`);
     }
     validateForm();
 }
 
 function validateForm() {
-    const lp = document.querySelector('.chk-lp:checked') || currentRandom.length > 0;
+    const lp = document.querySelector('.chk-lp:checked');
     const kb = document.querySelectorAll('.chk-kb:checked').length;
     const lk = document.querySelectorAll('.chk-lk:checked').length;
     const sy = document.querySelectorAll('.chk-sy:checked').length;
 
-    if (document.querySelector('.chk-lp:checked')) {
-        currentRandom = []; document.getElementById('random-display').innerText = "";
+    const btnAdd = document.getElementById('btn-add');
+    const isValid = (lp && kb > 0 && lk === 2 && sy > 0);
+
+    btnAdd.disabled = !isValid;
+
+    // Opsional: Beri warna orange mencolok jika sudah valid
+    if(isValid) {
+        btnAdd.classList.add('animate__pulse');
+    } else {
+        btnAdd.classList.remove('animate__pulse');
     }
-    document.getElementById('btn-add').disabled = !(lp && kb > 0 && lk === 2 && sy > 0);
 }
 
+/* ===============================
+    MANAJEMEN KERANJANG
+================================ */
 function addToTumpengCart() {
-    const lpSelect = document.querySelector('.chk-lp:checked');
-    const lp = lpSelect ? lpSelect.value : currentRandom.join("+");
-
-    // PERBAIKAN DI SINI: Sesuaikan selector dengan class di HTML
+    const lp = document.querySelector('.chk-lp:checked').value;
     const kb = Array.from(document.querySelectorAll('.chk-kb:checked')).map(c => c.value);
-    const lk = Array.from(document.querySelectorAll('.chk-lk:checked')).map(c => c.value); // Gunakan .chk-lk
-    const sy = Array.from(document.querySelectorAll('.chk-sy:checked')).map(c => c.value); // Gunakan .chk-sy
-
+    const lk = Array.from(document.querySelectorAll('.chk-lk:checked')).map(c => c.value);
+    const sy = Array.from(document.querySelectorAll('.chk-sy:checked')).map(c => c.value);
     const note = document.getElementById('catatan-khusus').value.trim();
 
     cartTumpeng.push({
@@ -141,7 +115,7 @@ function addToTumpengCart() {
         sayur: sy.join(", "),
         note: note || "Tidak ada catatan",
         qty: 1,
-        harga: 750000
+        harga: tumpengData.harga
     });
 
     saveToLocal();
@@ -151,85 +125,80 @@ function addToTumpengCart() {
     document.getElementById('tumpeng-cart-view').scrollIntoView({ behavior: 'smooth' });
 }
 
-function resetForm() {
-    document.getElementById('tumpeng-form').reset();
-    currentRandom = []; document.getElementById('random-display').innerText = "";
-    validateForm();
+/* ===============================
+    LOGIKA LAYANAN (DINE-IN / DELIVERY)
+================================ */
+function handleServiceSelection() {
+    const isDineIn = document.getElementById('type-dinein').checked;
+    const infoForm = document.getElementById('customer-info-form');
+    const deliveryFields = document.getElementById('delivery-fields');
+    const phoneContainer = document.getElementById('phone-container');
+    const dpAlert = document.getElementById('dp-alert');
+    const btnCheckout = document.getElementById('btn-checkout-wa');
+
+    if (infoForm) {
+        infoForm.classList.remove('d-none');
+        btnCheckout.style.display = 'block';
+
+        if (isDineIn) {
+            deliveryFields.classList.add('d-none');
+            dpAlert.classList.add('d-none');
+            if(phoneContainer) phoneContainer.classList.add('d-none');
+        } else {
+            deliveryFields.classList.remove('d-none');
+            dpAlert.classList.remove('d-none');
+            if(phoneContainer) phoneContainer.classList.remove('d-none');
+        }
+        infoForm.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
 function renderCart() {
     const cont = document.getElementById('tumpeng-cart-items');
+    const serviceTypeCont = document.getElementById('service-type-container');
     const infoForm = document.getElementById('customer-info-form');
     const addMoreBtn = document.getElementById('add-more-container');
 
+    if (!cont) return;
+
     if (cartTumpeng.length === 0) {
-        cont.innerHTML = `
-            <div class="text-center p-5 bg-white rounded-4 border shadow-sm">
-                <i class="bi bi-cart-x fs-1 text-muted"></i>
-                <p class="mt-2 text-secondary fw-semibold">Belum ada racikan tumpeng</p>
-            </div>`;
-        infoForm.classList.add('d-none');
-        addMoreBtn.classList.add('d-none');
-    } else {
-        infoForm.classList.remove('d-none');
-        addMoreBtn.classList.remove('d-none');
-        cont.innerHTML = "";
-
-        cartTumpeng.forEach((item, i) => {
-            cont.innerHTML += `
-                <div class="cart-item-pro mb-3 animate__animated animate__fadeInUp">
-                    <div class="cart-header-pro">
-                        <span class="badge-racikan">TUMPENG #${i + 1}</span>
-                        <button class="btn-delete-pro" onclick="removeItem(${i})">
-                            <i class="bi bi-trash3"></i>
-                        </button>
-                    </div>
-                    <div class="cart-body-pro">
-                        <div class="detail-block">
-                            <span class="label">WARNA LAPISAN DOMINAN:</span>
-                            <span class="value text-capitalize">${item.lapisan}</span>
-                        </div>
-                        <div class="detail-block">
-                            <span class="label">Karbo:</span>
-                            <span class="value">${item.karbo}</span>
-                        </div>
-                        <div class="detail-block">
-                            <span class="label">Lauk Utama:</span>
-                            <span class="value">${item.lauk}</span>
-                        </div>
-                        <div class="detail-block">
-                            <span class="label">Sayur:</span>
-                            <span class="value">${item.sayur}</span>
-                        </div>
-                        <div class="note-box-pro">
-                            <i class="bi bi-chat-left-dots me-1"></i> Catatan: ${item.note}
-                        </div>
-                    </div>
-                    <div class="cart-footer-pro">
-                        <div class="qty-control-pro">
-                            <button onclick="updateQty(${i},-1)">-</button>
-                            <span class="qty-num">${item.qty}</span>
-                            <button onclick="updateQty(${i},1)">+</button>
-                        </div>
-                        <div class="price-pro text-end">
-                            <small class="d-block text-muted" style="font-size: 10px;">Subtotal</small>
-                            <span>Rp ${(item.harga * item.qty).toLocaleString()}</span>
-                        </div>
-                    </div>
-                </div>`;
-        });
+        cont.innerHTML = `<div class="text-center p-5 bg-white rounded-4 border shadow-sm">Belum ada racikan tumpeng</div>`;
+        if(serviceTypeCont) serviceTypeCont.classList.add('d-none');
+        if(infoForm) infoForm.classList.add('d-none');
+        if(addMoreBtn) addMoreBtn.classList.add('d-none');
+        updateCheckout();
+        return;
     }
-    updateCheckout();
-}
 
-// Fungsi untuk kembali ke atas/form racikan
-function scrollToForm() {
-    document.getElementById('tumpeng-form').scrollIntoView({ behavior: 'smooth' });
-    // Beri sedikit efek highlight pada label pertama agar user tahu mereka sudah di atas
-    const firstLabel = document.querySelector('.section-label');
-    firstLabel.style.transition = "0.5s";
-    firstLabel.style.transform = "scale(1.05)";
-    setTimeout(() => firstLabel.style.transform = "scale(1)", 500);
+    if(serviceTypeCont) serviceTypeCont.classList.remove('d-none');
+    if(addMoreBtn) addMoreBtn.classList.remove('d-none');
+
+    cont.innerHTML = "";
+    cartTumpeng.forEach((item, i) => {
+        cont.innerHTML += `
+            <div class="cart-item-pro mb-3 shadow-sm border-0">
+                <div class="cart-header-pro">
+                    <span class="badge-racikan">TUMPENG #${i + 1}</span>
+                    <button class="btn-delete-pro" onclick="removeItem(${i})"><i class="bi bi-trash3"></i></button>
+                </div>
+                <div class="cart-body-pro p-3 text-start">
+                    <div class="detail-block"><span class="label">LAPISAN:</span> <span class="value">${item.lapisan}</span></div>
+                    <div class="detail-block"><span class="label">KARBO:</span> <span class="value">${item.karbo}</span></div>
+                    <div class="detail-block"><span class="label">LAUK:</span> <span class="value">${item.lauk}</span></div>
+                    <div class="detail-block"><span class="label">SAYUR:</span> <span class="value">${item.sayur}</span></div>
+                    <div class="note-box-pro mt-2">Note: ${item.note}</div>
+                </div>
+                <div class="cart-footer-pro p-3 border-top d-flex justify-content-between align-items-center">
+                    <div class="qty-control-pro">
+                        <button onclick="updateQty(${i},-1)">-</button>
+                        <span class="fw-bold px-2">${item.qty}</span>
+                        <button onclick="updateQty(${i},1)">+</button>
+                    </div>
+                    <div class="price-pro text-success fw-bold">Rp ${(item.harga * item.qty).toLocaleString()}</div>
+                </div>
+            </div>`;
+    });
+    updateCheckout();
 }
 
 function updateQty(i, v) {
@@ -249,42 +218,56 @@ function removeItem(i) {
 
 function updateCheckout() {
     const btn = document.getElementById('btn-checkout-wa');
+    if(!btn) return;
     const total = cartTumpeng.reduce((s, i) => s + (i.harga * i.qty), 0);
-    btn.style.display = cartTumpeng.length > 0 ? 'block' : 'none';
     btn.innerHTML = `<i class="bi bi-whatsapp me-2"></i>Kirim Pesanan (Rp ${total.toLocaleString()})`;
 }
 
+function scrollToForm() {
+    document.getElementById('tumpeng-form').scrollIntoView({ behavior: 'smooth' });
+}
+
 /* ===============================
-    CHECKOUT WHATSAPP (PERMINTAAN USER)
+    CHECKOUT WHATSAPP FINAL
 ================================ */
-function checkoutHampersWA() {
+function checkoutTumpengWA() {
+    const serviceNode = document.querySelector('input[name="service-type"]:checked');
+    if(!serviceNode) { alert("Pilih tipe layanan dulu!"); return; }
+
+    const serviceType = serviceNode.value;
     const name = document.getElementById('cust-name').value.trim();
     const phone = document.getElementById('cust-phone').value.trim();
+    const payment = document.getElementById('cust-payment').value;
     const addr = document.getElementById('cust-address').value.trim();
     const maps = document.getElementById('cust-maps').value.trim();
-    const payment = document.getElementById('cust-payment').value;
 
-    // Validasi input
-    if(!name || !phone || !addr || !payment) {
-        alert("Mohon lengkapi Data Pelanggan dan Pilih Metode Pembayaran!");
-        return;
+    if(!name || !payment) {
+        alert("Mohon lengkapi Nama dan Metode Pembayaran!"); return;
     }
 
-    const total = cartHampers.reduce((s, i) => s + (i.harga * i.qty), 0);
-    const dpAmount = total * 0.5; // DP 50%
+    if(serviceType === "Delivery" && (!phone || !addr)) {
+        alert("Mohon lengkapi No. WhatsApp dan Alamat untuk pengiriman!"); return;
+    }
 
-    let msg = "*👋Hallo ISASAI R & V. PESANAN TUMPENG ISASAI*\n\n";
+    const total = cartTumpeng.reduce((s, i) => s + (i.harga * i.qty), 0);
 
-    msg += `*Data Pelanggan:*\n`;
+    let msg = `*👋Hallo ISASAI R & V. Pesanan Tumpeng ${serviceType.toUpperCase()}*\n\n`;
     msg += `👤 Nama: ${name}\n`;
-    msg += `📞 HP: ${phone}\n`;
-    msg += `📍 Alamat: ${addr}\n`;
-    msg += `🔗 Maps: ${maps || '-'}\n`;
-    msg += `💳 Pembayaran: ${payment}\n\n`;
 
+    if(serviceType === "Delivery") {
+        msg += `📞 HP: ${phone}\n`;
+        msg += `📍 Alamat: ${addr}\n`;
+        msg += `🔗 Maps: ${maps || '-'}\n`;
+    } else {
+        msg += `🍴 *Layanan: Makan di Tempat*\n`;
+    }
+
+    msg += `💳 Pembayaran: ${payment}\n\n`;
     msg += `*Detail Pesanan:*\n`;
-    cartHampers.forEach((it, i) => {
-        msg += `*${i+1}. Hampers (x${it.qty})*\n`;
+
+    cartTumpeng.forEach((it, i) => {
+        msg += `*${i+1}. Tumpeng (x${it.qty})*\n`;
+        msg += `- Lapisan: ${it.lapisan}\n`;
         msg += `- Karbo: ${it.karbo}\n`;
         msg += `- Lauk: ${it.lauk}\n`;
         msg += `- Sayur: ${it.sayur}\n`;
@@ -292,16 +275,36 @@ function checkoutHampersWA() {
     });
 
     msg += `--------------------------\n`;
-    msg += `*Total Pesanan: Rp ${total.toLocaleString()}*\n`;
-    msg += `*DP Wajib (50%): Rp ${dpAmount.toLocaleString()}*\n`;
-    msg += `--------------------------\n\n`;
+    msg += `*Total: Rp ${total.toLocaleString()}*\n`;
 
-    msg += `⚠️ *PENTING*\n`;
-    msg += `Sebelum pesanan diposes kami ingin DP 50% dahulu.\n`;
-    msg += `Tanpa DP, pesanan tidak masuk antrian produksi.\n\n`;
+    if(serviceType === "Delivery") {
+        msg += `*DP (50%): Rp ${(total * 0.5).toLocaleString()}*\n`;
+        msg += `--------------------------\n`;
+        if(payment.toLowerCase().includes("tunai") || payment.toLowerCase().includes("cash")) {
+            msg += `⚠️ Pesanan *Jarak Jauh* via *Tunai*. Mohon instruksi admin untuk pembayaran DP agar pesanan bisa diproses.\n\n`;
+        } else {
+            msg += `⚠️ Kami akan segera transfer DP, mohon kirimkan instruksi pembayaran via *${payment}* agar pesanan segera diproses.\n\n`;
+        }
+    } else {
+        msg += `--------------------------\n`;
+    }
 
-    msg += `_Mohon konfirmasi admin untuk instruksi pembayaran via ${payment}. selanjutnya_ 🙏`;
+    msg += `Terima Kasih, ISASAI ~ R & V.`;
 
-    // Kirim ke nomor WhatsApp yang diminta
-    window.open(`https://wa.me/628114814415?text=${encodeURIComponent(msg)}`);
+    const adminPhone = "628114814415";
+    window.open(`https://wa.me/${adminPhone}?text=${encodeURIComponent(msg)}`, "_blank");
+
+    localStorage.removeItem('isasai_cart_tumpeng');
+    cartTumpeng = [];
+    setTimeout(() => { window.location.reload(); }, 1000);
+}
+
+function renderPromo() {
+    const inner = document.getElementById('carousel-inner-promo');
+    const ind = document.getElementById('carousel-indicators');
+    if(!inner || !ind) return;
+    promoImages.forEach((img, i) => {
+        inner.innerHTML += `<div class="carousel-item ${i === 0 ? 'active' : ''}"><img src="${img}" class="d-block w-100"></div>`;
+        ind.innerHTML += `<button type="button" data-bs-target="#carouselPromo" data-bs-slide-to="${i}" class="${i === 0 ? 'active' : ''}"></button>`;
+    });
 }

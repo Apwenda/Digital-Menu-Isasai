@@ -31,6 +31,12 @@ function goToHero() {
   }
 }
 
+function goToHomeView() {
+    document.getElementById("hero-view").style.display = "none";
+    document.getElementById("main-app").style.display = "block";
+    showPage('home-view');
+}
+
 /* ===============================
    MOBILE BOTTOM NAV HANDLER
 ================================ */
@@ -721,7 +727,7 @@ document.getElementById("checkout-form").onsubmit = (e) => {
   text += `\nWA: ${document.getElementById("whatsapp").value}`;
   text += `\nAlamat: ${document.getElementById("alamat").value || "-"}`;
   text += `\nMetode Pembayaran: ${document.getElementById("pembayaran").value}`;
-  text += `\n\nTerima Kasih`;
+  text += `\n\nTerima Kasih, Isasai ~ R & V`;
 
   window.open(
     `https://wa.me/${ADMIN_WA}?text=${encodeURIComponent(text)}`,
