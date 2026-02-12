@@ -54,8 +54,8 @@ body { font-family: 'Montserrat', sans-serif; }
 /* Sembunyikan radio default */
 .btn-check:checked + .service-card {
     border-color: #004225 !important;
-    background-color: #fdfaf0 !important;
-    box-shadow: 0 4px 12px rgba(1, 35, 20, 0.1);
+    background-color: #f0fdf4 !important;
+    box-shadow: 0 4px 12px rgba(0, 66, 37, 0.1);
 }
 
 .service-card {
