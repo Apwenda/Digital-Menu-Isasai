@@ -1,11 +1,11 @@
 /* 1. VARIABEL SISTEM (PSIKOLOGI WARNA) */
 :root {
-    --isasai-green: #004225;  /* Profesional & Terpercaya */
-    --isasai-yellow: #FFCC00; /* Identitas Brand */
-    --isasai-orange: #FF8C00; /* Urgensi & Nafsu Makan (CTA) */
+    --isasai-green: #004225;
+    --isasai-yellow: #FFCC00;
+    --isasai-orange: #FF8C00;
     --isasai-white: #ffffff;
     --isasai-light: #f8f9fa;
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* 2. LAYOUT DASAR */

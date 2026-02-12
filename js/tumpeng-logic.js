@@ -289,7 +289,7 @@ function checkoutTumpengWA() {
         msg += `--------------------------\n`;
     }
 
-    msg += `Terima Kasih, ISASAI ~ R & V.`;
+    msg += `Helem Foi, ISASAI ~ R & V.`;
 
     const adminPhone = "628114814415";
     window.open(`https://wa.me/${adminPhone}?text=${encodeURIComponent(msg)}`, "_blank");
