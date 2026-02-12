@@ -1,127 +1,5 @@
 [
   {
-    "id": 1,
-    "nama": "Paket Sentani Fest (35 Orang)",
-    "harga": 5750000,
-    "deskripsi": "Paket Sentani Fest adalah sajian cita rasa autentik Danau Sentani untuk rombongan besar dengan olahan ikan segar.",
-    "kategori": "Makanan",
-    "sub": "Paket/Combo",
-    "sub_header": "Menu Paket/Combo",
-    "isPaket": true,
-    "gambar": [
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).jpg",
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (2).jpg",
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).png"
-    ],
-    "items": [
-      { "name": "Papeda panas sempe sedang", "qty": "2 porsi" },
-      { "name": "Papeda bungkus", "qty": "10 porsi" },
-      { "name": "Keladi tumbuk", "qty": "5 porsi" },
-      { "name": "Campuran ubi rebus", "qty": "5 porsi" },
-      { "name": "Pisang asli rebus", "qty": "5 porsi" },
-      { "name": "Ikan Gabus saos", "qty": "20 potong" },
-      {
-        "name": "Ikan Gabus (Pilih Olahan)",
-        "qty": "20 potong",
-        "options": ["Gabus Kuah Bening", "Gabus Kuah Kuning"]
-      },
-      { "name": "Mujair asar santan", "qty": "25 potong" },
-      { "name": "Mujair kuah kuning", "qty": "25 potong" },
-      { "name": "Sayur tumis", "qty": "9 porsi" },
-      { "name": "Sayur genemo lilin santan", "qty": "9 porsi" },
-      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
-    ]
-  },
-  {
-    "id": 2,
-    "nama": "Paket Makan Ayapo (20 Orang)",
-    "harga": 3550000,
-    "deskripsi": "Paket Makan Ayapo menyajikan papeda, umbi lokal, dan olahan ikan khas Papua untuk kebersamaan rombongan besar.",
-    "kategori": "Makanan",
-    "sub": "Paket/Combo",
-    "isPaket": true,
-    "gambar": [
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (3).jpg",
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (4).jpg",
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (5).jpg"
-    ],
-    "items": [
-      { "name": "Papeda panas sempe sedang", "qty": "2 porsi" },
-      { "name": "Papeda bungkus", "qty": "3 porsi" },
-      { "name": "Keladi tumbuk", "qty": "2 porsi" },
-      { "name": "Campuran ubi rebus", "qty": "2 porsi" },
-      { "name": "Pisang asli rebus", "qty": "2 porsi" },
-      { "name": "Ikan Gabus saos", "qty": "10-15 potong" },
-      {
-        "name": "Ikan Gabus (Pilih Olahan)",
-        "qty": "20 potong",
-        "options": ["Gabus Kuah Bening", "Gabus Kuah Kuning"]
-      },
-      { "name": "Mujair asar santan", "qty": "15 potong" },
-      { "name": "Sayur tumis", "qty": "5 porsi" },
-      { "name": "Sayur genemo lilin santan", "qty": "5 porsi" },
-      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
-    ]
-  },
-  {
-    "id": 3,
-    "nama": "Paket Makan Isasai (10 Orang) - V2",
-    "harga": 1750000,
-    "deskripsi": "Paket Makan Isasai menyajikan papeda, umbi lokal, dan olahan ikan pilihan untuk kebersamaan sepuluh orang keluarga besar.",
-    "kategori": "Makanan",
-    "sub": "Paket/Combo",
-    "isPaket": true,
-    "gambar": [
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (7).jpg",
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (6).jpg",
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (5).jpg"
-    ],
-    "items": [
-      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
-      { "name": "Papeda bungkus", "qty": "5 porsi" },
-      { "name": "Keladi tumbuk/campuran ubi", "qty": "2 porsi" },
-      { "name": "Pisang asli rebus", "qty": "2 porsi" },
-      {
-        "name": "Ikan Mujair (Pilih Olahan)",
-        "qty": "20 potong",
-        "options": ["Mujair Kuah Bening", "Mujair Kuah Kuning", "Saos"]
-      },
-      { "name": "Ikan Gabus asar kuah santan", "qty": "10-12 potong" },
-      { "name": "Sayur tumis", "qty": "3 porsi" },
-      { "name": "Sayur genemo lilin santan", "qty": "2 porsi" },
-      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
-    ]
-  },
-  {
-    "id": 4,
-    "nama": "Paket Makan Isasai (10 Orang) - V1",
-    "harga": 1550000,
-    "deskripsi": "Paket Makan Isasai menghadirkan papeda hangat, umbi lokal, serta olahan ikan khas Papua untuk sepuluh orang bersama.",
-    "kategori": "Makanan",
-    "sub": "Paket/Combo",
-    "isPaket": true,
-    "gambar": [
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (7).jpg",
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (2).jpg",
-      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).jpg"
-    ],
-    "items": [
-      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
-      { "name": "Papeda bungkus", "qty": "5 porsi" },
-      { "name": "Keladi tumbuk/campuran ubi", "qty": "2 porsi" },
-      { "name": "Pisang asli rebus", "qty": "2 porsi" },
-      { "name": "Ikan Gabus saos", "qty": "10-12 potong" },
-      {
-        "name": "Ikan Gabus (Pilih Olahan)",
-        "qty": "10-12 potong",
-        "options": ["Gabus Kuah Bening", "Gabus Kuah Kuning"]
-      },
-      { "name": "Sayur tumis", "qty": "3 porsi" },
-      { "name": "Sayur genemo lilin santan", "qty": "2 porsi" },
-      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
-    ]
-  },
-  {
     "id": 5,
     "nama": "Paket Makan Waena _Berempat_(1)",
     "harga": 625000,
@@ -225,10 +103,132 @@
       {
         "name": "Ikan Gabus (Pilih Olahan)",
         "qty": "4-6 potong",
-        "options": ["Gabus Saos", "Gabus Kuah Bening","Gabus Kuah Kuning"]
+        "options": ["Gabus Saos", "Gabus Kuah Bening", "Gabus Kuah Kuning"]
       },
       { "name": "Sayur tumis", "qty": "1 porsi" },
       { "name": "Sayur genemo lilin santan", "qty": "1 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 4,
+    "nama": "Paket Makan Isasai (10 Orang) - V1",
+    "harga": 1550000,
+    "deskripsi": "Paket Makan Isasai menghadirkan papeda hangat, umbi lokal, serta olahan ikan khas Papua untuk sepuluh orang bersama.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (7).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (2).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).jpg"
+    ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
+      { "name": "Papeda bungkus", "qty": "5 porsi" },
+      { "name": "Keladi tumbuk/campuran ubi", "qty": "2 porsi" },
+      { "name": "Pisang asli rebus", "qty": "2 porsi" },
+      { "name": "Ikan Gabus saos", "qty": "10-12 potong" },
+      {
+        "name": "Ikan Gabus (Pilih Olahan)",
+        "qty": "10-12 potong",
+        "options": ["Gabus Kuah Bening", "Gabus Kuah Kuning"]
+      },
+      { "name": "Sayur tumis", "qty": "3 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "2 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 3,
+    "nama": "Paket Makan Isasai (10 Orang) - V2",
+    "harga": 1750000,
+    "deskripsi": "Paket Makan Isasai menyajikan papeda, umbi lokal, dan olahan ikan pilihan untuk kebersamaan sepuluh orang keluarga besar.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (7).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (6).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (5).jpg"
+    ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "1 porsi" },
+      { "name": "Papeda bungkus", "qty": "5 porsi" },
+      { "name": "Keladi tumbuk/campuran ubi", "qty": "2 porsi" },
+      { "name": "Pisang asli rebus", "qty": "2 porsi" },
+      {
+        "name": "Ikan Mujair (Pilih Olahan)",
+        "qty": "20 potong",
+        "options": ["Mujair Kuah Bening", "Mujair Kuah Kuning", "Saos"]
+      },
+      { "name": "Ikan Gabus asar kuah santan", "qty": "10-12 potong" },
+      { "name": "Sayur tumis", "qty": "3 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "2 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 2,
+    "nama": "Paket Makan Ayapo (20 Orang)",
+    "harga": 3550000,
+    "deskripsi": "Paket Makan Ayapo menyajikan papeda, umbi lokal, dan olahan ikan khas Papua untuk kebersamaan rombongan besar.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "isPaket": true,
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (3).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (4).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (5).jpg"
+    ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "2 porsi" },
+      { "name": "Papeda bungkus", "qty": "3 porsi" },
+      { "name": "Keladi tumbuk", "qty": "2 porsi" },
+      { "name": "Campuran ubi rebus", "qty": "2 porsi" },
+      { "name": "Pisang asli rebus", "qty": "2 porsi" },
+      { "name": "Ikan Gabus saos", "qty": "10-15 potong" },
+      {
+        "name": "Ikan Gabus (Pilih Olahan)",
+        "qty": "20 potong",
+        "options": ["Gabus Kuah Bening", "Gabus Kuah Kuning"]
+      },
+      { "name": "Mujair asar santan", "qty": "15 potong" },
+      { "name": "Sayur tumis", "qty": "5 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "5 porsi" },
+      { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
+    ]
+  },
+  {
+    "id": 1,
+    "nama": "Paket Sentani Fest (35 Orang)",
+    "harga": 5750000,
+    "deskripsi": "Paket Sentani Fest adalah sajian cita rasa autentik Danau Sentani untuk rombongan besar dengan olahan ikan segar.",
+    "kategori": "Makanan",
+    "sub": "Paket/Combo",
+    "sub_header": "Menu Paket/Combo",
+    "isPaket": true,
+    "gambar": [
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (2).jpg",
+      "assets/images/Menu-Isasai/Makanan/Menu-paket/menu-paket-combo (1).png"
+    ],
+    "items": [
+      { "name": "Papeda panas sempe sedang", "qty": "2 porsi" },
+      { "name": "Papeda bungkus", "qty": "10 porsi" },
+      { "name": "Keladi tumbuk", "qty": "5 porsi" },
+      { "name": "Campuran ubi rebus", "qty": "5 porsi" },
+      { "name": "Pisang asli rebus", "qty": "5 porsi" },
+      { "name": "Ikan Gabus saos", "qty": "20 potong" },
+      {
+        "name": "Ikan Gabus (Pilih Olahan)",
+        "qty": "20 potong",
+        "options": ["Gabus Kuah Bening", "Gabus Kuah Kuning"]
+      },
+      { "name": "Mujair asar santan", "qty": "25 potong" },
+      { "name": "Mujair kuah kuning", "qty": "25 potong" },
+      { "name": "Sayur tumis", "qty": "9 porsi" },
+      { "name": "Sayur genemo lilin santan", "qty": "9 porsi" },
       { "name": "Sambal, buah, air putih", "qty": "Lengkap" }
     ]
   },
