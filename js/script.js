@@ -6,11 +6,21 @@ let cart = JSON.parse(localStorage.getItem("isasai_cart")) || [];
 const ADMIN_WA = "628114814415";
 
 // 2. INISIALISASI DATA
-fetch("data.json")
+fetch("datas.json")
   .then((res) => res.json())
   .then((data) => {
-    menuData = data;
-    currentDisplayMenu = data; // Inisialisasi awal dengan semua menu
+    // 1. Simpan data asli ke menuData dan urutkan permanen berdasarkan ID
+    menuData = data.sort((a, b) => a.id - b.id);
+
+    // 2. Jika ingin tampilan awal HANYA Paket/Combo (urut ID):
+    const paketBerdasarkanID = menuData.filter(item => item.sub === "Paket/Combo");
+
+    // 3. Set tampilan awal
+    currentDisplayMenu = paketBerdasarkanID;
+
+    // 4. Jalankan fungsi render
+    renderMenu(currentDisplayMenu);
+
     syncCart();
   })
   .catch((err) => console.error("Gagal memuat data menu:", err));
@@ -697,17 +707,40 @@ function updateActiveButton(target) {
 }
 
 function filterMenu(cat) {
-  updateActiveButton(event.target);
-  const filtered =
-    cat === "Semua" ? menuData : menuData.filter((i) => i.kategori === cat);
-  currentDisplayMenu = filtered; // Simpan filter ke state global
+  if (event) updateActiveButton(event.target);
+
+  const filtered = cat === "Semua"
+    ? [...menuData]
+    : menuData.filter((i) => i.kategori === cat);
+
+  // Urutkan berdasarkan ID (Kecil ke Besar)
+  filtered.sort((a, b) => a.id - b.id);
+
+  currentDisplayMenu = filtered;
   renderMenu(filtered);
 }
 
 function filterSub(subCat) {
-  updateActiveButton(event.target);
+  if (event) updateActiveButton(event.target);
+
   const filtered = menuData.filter((i) => i.sub === subCat);
-  currentDisplayMenu = filtered; // Simpan filter ke state global
+
+  // Urutkan berdasarkan ID (Kecil ke Besar)
+  filtered.sort((a, b) => a.id - b.id);
+
+  currentDisplayMenu = filtered;
+  renderMenu(filtered);
+}
+
+function filterSub(subCat) {
+  if (event) updateActiveButton(event.target);
+
+  const filtered = menuData.filter((i) => i.sub === subCat);
+
+  // Urutkan berdasarkan harga: Termurah -> Termahal
+  filtered.sort((a, b) => a.harga - b.harga);
+
+  currentDisplayMenu = filtered;
   renderMenu(filtered);
 }
 
