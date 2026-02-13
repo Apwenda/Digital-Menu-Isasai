@@ -14,93 +14,107 @@ body {
     background-color: var(--isasai-light);
     color: #333;
 }
-
-/* Container Utama Preloader */
+/* Pastikan Preloader memenuhi layar dan isinya di tengah */
 #preloader {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: #ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease, visibility 0.5s;
+    justify-content: center; /* Center horizontal */
+    align-items: center;     /* Center vertikal */
+    z-index: 10000;
 }
 
-/* Wrapper untuk Logo dan Spinner */
+/* Mengatur susunan logo dan teks ke bawah */
+.loader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Container Logo & Spinner */
 .logo-wrapper {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Jarak antara logo dan teks */
 }
 
-/* MODIFIKASI LOGO AGAR BULAT */
+/* Logo Bulat di Tengah */
 .loader-logo {
-    width: 115px;        /* Ukuran logo */
-    height: 115px;       /* Harus sama dengan width agar bulat sempurna */
-    object-fit: cover;   /* Memastikan gambar tidak penyet saat dipotong */
-    border-radius: 50%;  /* Ini yang membuat logo jadi bulat */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
     z-index: 2;
-    background-color: #fff; /* Memberi background putih jika logo asli transparan */
-    padding: 5px;        /* Memberi jarak antara gambar logo dengan tepi bulatan */
+    background: white;
+    padding: 5px;
 }
 
-/* Garis Bulat yang Berputar */
+/* Spinner Melingkar yang Pas */
 .spinner {
     position: absolute;
-    width: 140px;
-    height: 140px;
-    border: 3px solid rgba(230, 126, 34, 0.1);
-    border-top: 3px solid #e67e22;
+    width: 130px;
+    height: 130px;
+    border: 4px solid rgba(0, 66, 37, 0.1); /* Pakai hijau transparan */
+    border-top: 4px solid #FFCC00;         /* Warna kuning brand */
     border-radius: 50%;
-    animation: spin 1s linear infinite;
+    animation: spin 2s linear infinite;
     z-index: 1;
 }
 
-/* Container pembungkus teks agar tetap di tengah tapi ngetik ke kanan */
+/* Container Teks */
 .typing-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-top: 20px;
 }
 
+/* Gaya Teks Mengetik */
 .loading-text {
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    color: #004225; /* Kuning emas */
-    letter-spacing: 1px;
-    font-size: 1rem;
-
-    /* Efek Mengetik dari Kiri ke Kanan */
+    font-weight: 700;
+    color: #004225;
+    font-size: 1.2rem;
     white-space: nowrap;
     overflow: hidden;
-    display: block;
-    border-right: 3px solid #ffcc00; /* Kursor ketik */
+    border-right: 3px solid #FFCC00;
     width: 0;
-
-    /* Animasi */
+    /* Animasi ketik 3.5 detik */
     animation:
-        typing 2.5s steps(27, end) forwards,
-        blink 0.75s step-end infinite;
+        typing 3.5s steps(27, end) forwards,
+        blink 0.8s step-end infinite;
 }
 
-/* Animasi Inti: Menambah lebar dari 0 ke 100% (Kiri ke Kanan) */
+/* Keyframes */
 @keyframes typing {
     from { width: 0; }
-    to { width: 263px; } /* Sesuaikan lebar ini dengan panjang teksmu (sekitar 260px-280px) */
+    to { width: 100%; max-width: 320px; } /* Sesuaikan lebar teks */
 }
 
 @keyframes blink {
     from, to { border-color: transparent; }
-    50% { border-color: #ffcc00; }
+    50% { border-color: #FFCC00; }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Efek menghilang */
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s;
 }
 
 /* Style Logo Bulat */
