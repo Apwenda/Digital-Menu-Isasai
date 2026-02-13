@@ -206,6 +206,12 @@ function renderMenu(items) {
   allCarousels.forEach((c) => new bootstrap.Carousel(c));
 }
 
+// Mengurutkan menu berdasarkan harga dari termurah ke termahal
+const menuUrut = menuData.sort((a, b) => a.harga - b.harga);
+
+// Setelah diurutkan, baru panggil fungsi render/tampil menu
+renderMenu(menuUrut);
+
 // Update SyncCart untuk Floating Bar
 function syncCart() {
   localStorage.setItem("isasai_cart", JSON.stringify(cart));
