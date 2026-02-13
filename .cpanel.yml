@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/isat5172/public_html
-    - /bin/rsync -av --delete ./ $DEPLOYPATH
