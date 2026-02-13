@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Mealbox | Isasai R & V</title>
+    <title>Custom Mealbox | Isasai R &amp; V</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
@@ -15,9 +15,9 @@
 
     <nav class="navbar navbar-dark sticky-top shadow" style="background-color: #004225;">
         <div class="container p-2">
-            <a href="index.html" class="text-white text-decoration-none d-flex align-items-center">
+            <a href="index.html?page=menu" class="text-white text-decoration-none d-flex align-items-center">
                 <i class="bi bi-arrow-left fs-4 me-3"></i>
-                <span class="fw-bold">Mealbox Isasai</span>
+                <span class="fw-bold">Tumpeng Isasai</span>
             </a>
         </div>
     </nav>
@@ -52,9 +52,11 @@
                     </div>
                     <div class="mb-4">
                         <label class="section-label">4. CATATAN KHUSUS</label>
-                        <textarea id="catatan-khusus" class="form-control rounded-3" rows="3" placeholder="Contoh: Tanpa sambal, porsi nasi banyak, dll..."></textarea>
+                        <textarea id="catatan-khusus" class="form-control rounded-3" rows="3"
+                            placeholder="Contoh: Tanpa sambal, porsi nasi banyak, dll..."></textarea>
                     </div>
-                    <button type="button" id="btn-add" class="btn btn-cta-orange w-100 py-3 rounded-pill fw-bold" onclick="addToMealboxCart()" disabled>
+                    <button type="button" id="btn-add" class="btn btn-cta-orange w-100 py-3 rounded-pill fw-bold"
+                        onclick="addToMealboxCart()" disabled>
                         MASUKKAN KE KERANJANG
                     </button>
                 </form>
@@ -67,7 +69,8 @@
             <div id="mealbox-cart-items"></div>
 
             <div id="add-more-container" class="d-none mt-2 mb-4 text-center">
-                <button type="button" class="btn btn-sm btn-outline-success rounded-pill px-4 fw-bold" onclick="scrollToForm()">
+                <button type="button" class="btn btn-sm btn-outline-success rounded-pill px-4 fw-bold"
+                    onclick="scrollToForm()">
                     <i class="bi bi-plus-lg me-1"></i> Tambah Mealbox Lagi
                 </button>
             </div>
@@ -76,14 +79,16 @@
                 <label class="section-label mb-3 fs-5 text-center d-block">PILIH TIPE LAYANAN</label>
                 <div class="row g-3">
                     <div class="col-6">
-                        <input type="radio" class="btn-check" name="service-type" id="type-dinein" value="Dine In" onchange="handleServiceSelection()">
+                        <input type="radio" class="btn-check" name="service-type" id="type-dinein" value="Dine In"
+                            onchange="handleServiceSelection()">
                         <label class="service-card" for="type-dinein">
                             <i class="bi bi-shop"></i>
                             <span>Makan di Tempat</span>
                         </label>
                     </div>
                     <div class="col-6">
-                        <input type="radio" class="btn-check" name="service-type" id="type-delivery" value="Delivery" onchange="handleServiceSelection()">
+                        <input type="radio" class="btn-check" name="service-type" id="type-delivery" value="Delivery"
+                            onchange="handleServiceSelection()">
                         <label class="service-card" for="type-delivery">
                             <i class="bi bi-truck"></i>
                             <span>Jarak Jauh</span>
@@ -92,28 +97,35 @@
                 </div>
             </div>
 
-            <div id="customer-info-form" class="card border-0 shadow-sm rounded-4 d-none animate__animated animate__fadeInUp">
+            <div id="customer-info-form"
+                class="card border-0 shadow-sm rounded-4 d-none animate__animated animate__fadeInUp">
                 <div class="card-body p-4">
                     <h6 class="fw-bold mb-3" style="color: #004225;">Informasi Pelanggan</h6>
 
-                    <div id="dp-alert" class="alert alert-warning py-2 mb-3 small d-none" style="border-radius: 10px; border:none; background-color: #fff3cd;">
-                        <i class="bi bi-exclamation-triangle-fill me-2"></i><strong>Penting:</strong> DP Minimal 50% untuk proses produksi.
+                    <div id="dp-alert" class="alert alert-warning py-2 mb-3 small d-none"
+                        style="border-radius: 10px; border:none; background-color: #fff3cd;">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i><strong>Penting:</strong> DP Minimal 50%
+                        untuk proses produksi.
                     </div>
 
                     <div class="mb-3">
-                        <input type="text" id="cust-name" class="form-control form-control-sm rounded-3" placeholder="Nama Lengkap">
+                        <input type="text" id="cust-name" class="form-control form-control-sm rounded-3"
+                            placeholder="Nama Lengkap">
                     </div>
 
                     <div id="phone-container" class="mb-3">
-                        <input type="tel" id="cust-phone" class="form-control form-control-sm rounded-3" placeholder="No. WhatsApp">
+                        <input type="tel" id="cust-phone" class="form-control form-control-sm rounded-3"
+                            placeholder="No. WhatsApp">
                     </div>
 
                     <div id="delivery-fields" class="d-none">
                         <div class="mb-3">
-                            <textarea id="cust-address" class="form-control form-control-sm rounded-3" rows="2" placeholder="Alamat Pengiriman"></textarea>
+                            <textarea id="cust-address" class="form-control form-control-sm rounded-3" rows="2"
+                                placeholder="Alamat Pengiriman"></textarea>
                         </div>
                         <div class="mb-3">
-                            <input type="url" id="cust-maps" class="form-control form-control-sm rounded-3" placeholder="Link Google Maps (Opsional)">
+                            <input type="url" id="cust-maps" class="form-control form-control-sm rounded-3"
+                                placeholder="Link Google Maps (Opsional)">
                         </div>
                     </div>
 
@@ -130,7 +142,8 @@
             </div>
 
             <div class="mt-4 pb-5">
-                <button class="btn btn-success w-100 py-3 rounded-pill fw-bold shadow mb-3" id="btn-checkout-wa" style="display:none;" onclick="checkoutMealboxWA()">
+                <button class="btn btn-success w-100 py-3 rounded-pill fw-bold shadow mb-3" id="btn-checkout-wa"
+                    style="display:none;" onclick="checkoutMealboxWA()">
                     <i class="bi bi-whatsapp me-2"></i>Kirim Pesanan Mealbox
                 </button>
                 <a href="index.html" class="btn btn-outline-secondary w-100 py-2 rounded-pill border-0">

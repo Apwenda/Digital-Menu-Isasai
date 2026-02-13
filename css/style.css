@@ -15,6 +15,137 @@ body {
     color: #333;
 }
 
+/* Container Utama Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+/* Wrapper untuk Logo dan Spinner */
+.logo-wrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* MODIFIKASI LOGO AGAR BULAT */
+.loader-logo {
+    width: 115px;        /* Ukuran logo */
+    height: 115px;       /* Harus sama dengan width agar bulat sempurna */
+    object-fit: cover;   /* Memastikan gambar tidak penyet saat dipotong */
+    border-radius: 50%;  /* Ini yang membuat logo jadi bulat */
+    z-index: 2;
+    background-color: #fff; /* Memberi background putih jika logo asli transparan */
+    padding: 5px;        /* Memberi jarak antara gambar logo dengan tepi bulatan */
+}
+
+/* Garis Bulat yang Berputar */
+.spinner {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border: 3px solid rgba(230, 126, 34, 0.1);
+    border-top: 3px solid #e67e22;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1;
+}
+
+/* Container pembungkus teks agar tetap di tengah tapi ngetik ke kanan */
+.typing-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.loading-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #004225; /* Kuning emas */
+    letter-spacing: 1px;
+    font-size: 1rem;
+
+    /* Efek Mengetik dari Kiri ke Kanan */
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    border-right: 3px solid #ffcc00; /* Kursor ketik */
+    width: 0;
+
+    /* Animasi */
+    animation:
+        typing 2.5s steps(27, end) forwards,
+        blink 0.75s step-end infinite;
+}
+
+/* Animasi Inti: Menambah lebar dari 0 ke 100% (Kiri ke Kanan) */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 263px; } /* Sesuaikan lebar ini dengan panjang teksmu (sekitar 260px-280px) */
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #ffcc00; }
+}
+
+/* Style Logo Bulat */
+.loader-logo {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.logo-wrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto; /* Menjaga logo tetap di tengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Loader-logo tetap bulat */
+.loader-logo {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #fff;
+    padding: 5px;
+}
+
+/* Animasi Putaran */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
 /* 3. HEADER & NAVIGASI */
 .navbar {
     background-color: var(--isasai-green) !important;
@@ -219,6 +350,26 @@ body:has(.category-scroll-container) .category-scroll-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Pastikan ID ini bisa disembunyikan secara paksa oleh JS */
+#hero-view.d-none {
+    display: none !important;
+}
+
+#main-app.d-block {
+    display: block !important;
+}
+
+/* Penyesuaian preloader agar tidak goyang saat loading */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 10000; /* Harus lebih tinggi dari navbar */
 }
 
 /* ===============================

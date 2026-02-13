@@ -6,30 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isasai R &amp; V | Digital Menu</title>
     <!-- SEO BASIC -->
-<meta name="description" content="Isasai R & V adalah restoran & venue di Jayapura dengan menu makanan dan minuman khas Papua. Nikmati hidangan lezat dengan view indah Danau Sentani.">
-<meta name="keywords" content="Isasai, Isasai R & V, Isasai Jayapura, Isasai Danau Sentani, restoran Jayapura, restoran Danau Sentani, cafe Jayapura, tempat makan Jayapura, menu Isasai">
-<meta name="author" content="Isasai R & V">
-<meta name="robots" content="index, follow">
+    <meta name="description"
+        content="Isasai R & V adalah restoran & venue di Jayapura dengan menu makanan dan minuman khas Papua. Nikmati hidangan lezat dengan view indah Danau Sentani.">
+    <meta name="keywords"
+        content="Isasai, Isasai R & V, Isasai Jayapura, Isasai Danau Sentani, restoran Jayapura, restoran Danau Sentani, cafe Jayapura, tempat makan Jayapura, menu Isasai">
+    <meta name="author" content="Isasai R & V">
+    <meta name="robots" content="index, follow">
 
-<!-- LOCATION & LOCAL SEO -->
-<meta name="geo.region" content="ID-PAP">
-<meta name="geo.placename" content="Jayapura, Papua">
-<meta name="geo.position" content="-2.598041;140.622625">
-<meta name="ICBM" content="-2.598041, 140.622625">
+    <!-- LOCATION & LOCAL SEO -->
+    <meta name="geo.region" content="ID-PAP">
+    <meta name="geo.placename" content="Jayapura, Papua">
+    <meta name="geo.position" content="-2.598041;140.622625">
+    <meta name="ICBM" content="-2.598041, 140.622625">
 
-<!-- OPEN GRAPH (Facebook, WhatsApp, IG) -->
-<meta property="og:title" content="Isasai R & V | Restoran & Venue di Jayapura">
-<meta property="og:description" content="Menu makanan & minuman khas Papua dengan view Danau Sentani. Isasai R & V – Jayapura.">
-<meta property="og:type" content="Menu Online">
-<meta property="og:url" content="https://isasaimenu.online/">
-<meta property="og:image" content="https://isasaimenu.online/assets/Logo-isasai1.png">
-<meta property="og:locale" content="id_ID">
+    <!-- OPEN GRAPH (Facebook, WhatsApp, IG) -->
+    <meta property="og:title" content="Isasai R & V | Restoran & Venue di Jayapura">
+    <meta property="og:description"
+        content="Menu makanan & minuman khas Papua dengan view Danau Sentani. Isasai R & V – Jayapura.">
+    <meta property="og:type" content="Menu Online">
+    <meta property="og:url" content="https://isasaimenu.online/">
+    <meta property="og:image" content="https://isasaimenu.online/assets/Logo-isasai1.png">
+    <meta property="og:locale" content="id_ID">
 
-<!-- TWITTER CARD -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Isasai R & V | Restoran Jayapura">
-<meta name="twitter:description" content="Restoran & venue dengan menu khas Papua dan view Danau Sentani di Jayapura.">
-<meta name="twitter:image" content="https://isasaimenu.online/assets/Logo-isasai1.png">
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Isasai R & V | Restoran Jayapura">
+    <meta name="twitter:description"
+        content="Restoran & venue dengan menu khas Papua dan view Danau Sentani di Jayapura.">
+    <meta name="twitter:image" content="https://isasaimenu.online/assets/Logo-isasai1.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -39,12 +43,24 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="logo-wrapper">
+                <img src="assets/Logo-isasai.png" alt="Logo Isasai" class="loader-logo">
+                <div class="spinner"></div>
+            </div>
+            <div class="typing-container">
+                <div class="loading-text">Welcome to our digital menu</div>
+            </div>
+        </div>
+    </div>
     <header id="hero-view" class="hero-section d-flex align-items-center justify-content-center text-center text-white">
         <div class="hero-overlay"></div>
         <div class="hero-content position-relative p-4" style="z-index: 2">
             <div class="glass-card p-5 shadow-lg">
-                <img src="assets/Logo-isasai1.png" alt="Logo Isasai" class="hero-logo">
+                <img src="assets/Logo-isasai.png" alt="Logo Isasai" class="hero-logo">
                 <h1 class="display-5 fw-bold cafe-title">ISASAI</h1>
                 <h4 class="fst-italic">R &amp; V</h4>
                 <p class="lead small mb-4 px-3">
@@ -85,24 +101,24 @@
                             </button>
                             <ul class="dropdown-menu shadow">
                                 <li>
-                                    <button type="button" class="dropdown-item"
-                                        onclick="filterSub('Paket/Combo')">Paket / Combo</button>
+                                    <button type="button" class="dropdown-item" onclick="filterSub('Paket/Combo')">Paket
+                                        / Combo</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item" onclick="filterSub('Menu Satuan')">Menu
+                                        Satuan</button>
                                 </li>
                                 <li>
                                     <button type="button" class="dropdown-item"
-                                        onclick="filterSub('Menu Satuan')">Menu Satuan</button>
+                                        onclick="window.location.href='tumpeng.html'">Tumpeng Isasai</button>
                                 </li>
                                 <li>
                                     <button type="button" class="dropdown-item"
-                                    onclick="window.location.href='tumpeng.html'">Tumpeng Isasai</button>
+                                        onclick="window.location.href='hampers.html'">Hampers Isasai</button>
                                 </li>
                                 <li>
                                     <button type="button" class="dropdown-item"
-                                    onclick="window.location.href='hampers.html'">Hampers Isasai</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="dropdown-item"
-                                    onclick="window.location.href='mealbox.html'">Mealbox Isasai</button>
+                                        onclick="window.location.href='mealbox.html'">Mealbox Isasai</button>
                                 </li>
                             </ul>
                         </div>
@@ -118,32 +134,32 @@
                                         Arabika Papua</button></li>
                                 <li><button type="button" class="dropdown-item" onclick="filterSub('Jus')">Jus
                                         Buah Segar</button></li>
-                                <li><button type="button" class="dropdown-item"
-                                        onclick="filterSub('Special')">Minuman Spesial</button></li>
-                                <li><button type="button" class="dropdown-item"
-                                        onclick="filterSub('Teh Biasa')">Tea Variasi</button></li>
+                                <li><button type="button" class="dropdown-item" onclick="filterSub('Special')">Minuman
+                                        Spesial</button></li>
+                                <li><button type="button" class="dropdown-item" onclick="filterSub('Teh Biasa')">Tea
+                                        Variasi</button></li>
                             </ul>
                         </div>
 
                         <div class="dropdown">
-                                <button type="button" class="btn btn-cat dropdown-toggle fw-bold" data-bs-toggle="dropdown">
-                                    Snack
-                                </button>
-                                <ul class="dropdown-menu shadow">
-                                    <li>
-                                        <button type="button" class="dropdown-item"
-                                            onclick="filterSub('Snack Pangan Lokal')">
-                                            Snack Isasai
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="dropdown-item"
-                                            onclick="filterSub('Snack Plate Isasai')">
-                                            Snack Plate Isasai
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
+                            <button type="button" class="btn btn-cat dropdown-toggle fw-bold" data-bs-toggle="dropdown">
+                                Snack
+                            </button>
+                            <ul class="dropdown-menu shadow">
+                                <li>
+                                    <button type="button" class="dropdown-item"
+                                        onclick="filterSub('Snack Pangan Lokal')">
+                                        Snack Isasai
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item"
+                                        onclick="filterSub('Snack Plate Isasai')">
+                                        Snack Plate Isasai
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                         <button type="button" onclick="filterMenu('Extra')" class="btn btn-cat fw-bold">Extra</button>
                     </div>
                 </div>
@@ -276,12 +292,48 @@
                 &copy; 2026 <strong>Isasai R &amp; V</strong>. All Rights Reserved.
             </p>
             <p class="small text-muted">
-                Designed by <a href="https://apwenda.github.io/Deni-W/" target="_blank" class="designer-link">Deni Wenda</a>
+                Designed by <a href="https://apwenda.github.io/Deni-W/" target="_blank" class="designer-link">Deni
+                    Wenda</a>
             </p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+window.addEventListener("DOMContentLoaded", function() {
+    const loader = document.getElementById("preloader");
+    const heroView = document.getElementById("hero-view");
+    const mainApp = document.getElementById("main-app");
+    const bottomNav = document.querySelector(".mobile-bottom-nav");
+
+    // 1. Cek Parameter URL (?page=menu)
+    const urlParams = new URLSearchParams(window.location.search);
+    const targetPage = urlParams.get('page');
+
+    if (targetPage === 'menu') {
+        // JALUR PINTAS (Dari Tumpeng)
+        if (loader) loader.style.display = "none";
+        if (heroView) heroView.style.setProperty('display', 'none', 'important');
+        if (mainApp) mainApp.style.setProperty('display', 'block', 'important');
+
+        // Munculkan Navigasi Bawah khusus Mobile
+        if (bottomNav) {
+            bottomNav.style.setProperty('display', 'flex', 'important');
+        }
+
+        // Jalankan fungsi filter menu default jika ada di script.js kamu
+        if (typeof filterMenu === "function") filterMenu('Semua');
+
+    } else {
+        // JALUR NORMAL (Masuk pertama kali)
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                if (loader) loader.classList.add("loader-hidden");
+            }, 3000);
+        });
+    }
+});
+</script>
 </body>
 
 </html>

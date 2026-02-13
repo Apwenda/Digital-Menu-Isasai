@@ -35,7 +35,22 @@ document.addEventListener('DOMContentLoaded', () => {
 function saveToLocal() {
     localStorage.setItem('isasai_cart_tumpeng', JSON.stringify(cartTumpeng));
 }
+function backToHero() {
+    // 1. Sembunyikan navigasi bawah dan main app
+    document.getElementById('main-app').style.display = 'none';
 
+    const bottomNav = document.querySelector('.mobile-bottom-nav');
+    if (bottomNav) bottomNav.style.display = 'none';
+
+    // 2. Tampilkan kembali Hero Section (Halaman paling awal)
+    const heroView = document.getElementById('hero-view');
+    if (heroView) {
+        heroView.style.setProperty('display', 'flex', 'important');
+    }
+
+    // 3. Reset scroll ke atas
+    window.scrollTo(0, 0);
+}
 /* ===============================
     LOGIKA FORM & RENDER
 ================================ */
